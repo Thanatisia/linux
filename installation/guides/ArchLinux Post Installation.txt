@@ -1,0 +1,49 @@
+####################################################
+# Post-Installation                                #
+# Summary of the Post Installation guide found in  #
+# ArchLinux Installation.txt                       #
+####################################################
+
+> Display Server
+Install Packages:
+	xorg
+
+
+> Setup Audio 
+Install Packages:
+	alsa - alsa-utils 
+	or
+	PulseAudio
+
+> Install MicroCodes
+	amd-ucode
+	intel-ucode
+	After Installation: 
+		grub-mkconfig -o /boot/grub.cfg or
+		update-grub
+
+> AUR
+Install AUR Helpers
+	yay
+
+> If not installed yet
+	Install Terminal Editor
+		- Terminator
+		- Kate
+		- Vim
+		- Nano
+		- Sublime Text (subl)
+
+	Install Browser
+		- FireFox
+
+> Ricing
+	Install Rofi
+	Install Polybar
+	Install Conky
+
+> Gaming
+	Install Steam
+		- Join and Activate Steam Beta
+		- Activate Steam Proton
+	Install Lutris
