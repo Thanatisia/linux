@@ -1,8 +1,6 @@
-#----------------
 #	README
-#Folder Name: ArchLinux
-#Purpose: A folder for archlinux files - dotfiles, ricing designs, installation guides and config files for easy minimal installs or reinstallation.
-#----------------
++ Folder Name: ArchLinux
++ Purpose: A folder for archlinux files - dotfiles, ricing designs, installation guides and config files for easy minimal installs or reinstallation.
 
 # Contents
 ## Files
