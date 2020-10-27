@@ -23,6 +23,7 @@ ArchLinux Post Installation.txt : A Post-Installation write-up on things to do a
 2. scripts : This is used for all install scripts for ArchLinux and config installs
 ```
 
+
 ## Grabbing the individual files
 You can retrieve the scripts by 
 1. Cloning
