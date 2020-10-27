@@ -9,7 +9,7 @@ for fldrs in ${DOTFLDRS[@]}; do
 	mkdir -p $fldrs
 done
 
-[User Control]
+# [User Control]
 # Create Admin user
 read -p "Username: " uname
 read -p "Groups: " ugroups
@@ -28,7 +28,7 @@ else
 	# Error
 fi
 
-[Networking]
+# [Networking]
 # Install Networking Packages
 sudo pacman -S dhcpcd wireless_tools wpa_supplicant wpa_actiond dialog netctl
 
@@ -41,7 +41,7 @@ read -p "Enter your AP name: " AP_name
 read -p "Enter your AP pass: " AP_pass
 nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
 
-[Important Utilities]
+# [Important Utilities]
 # Install File Manager
 read -p "File Manager: " filemgr
 # Install Terminal Emulator
@@ -52,7 +52,7 @@ read -p "Web Browser: " browser
 read -p "Text Editor: " texteditor
 sudo pacman -S $filemgr $term $browser $texteditor
 
-[Setup AUR]
+# [Setup AUR]
 # Install AUR Helper
 # AUR: yay
 # NOTE:
@@ -62,10 +62,10 @@ cd yay-git
 makepkg -si 					# Make and Install Arch Package
 yay 						# To use yay AUR manager to install stuff from the AUR
 
-[MicroCodes]
+# [MicroCodes]
 sudo pacman -S intel-ucode amd-ucode
 
-[System]
+# [System]
 # Install and Setup Graphics
 sudo pacman -S xorg-server xorg-xinit xorg-server-utils
 
@@ -143,8 +143,9 @@ case "$opt" in
 			"LXDE") sudo pacman -S lxde
 				start_x="startdde"
 				;;
-		;;
-	*)
+        esac
+        ;;
+	*) echo "Invalid option - either DE or WM"
 		;;
 esac
 
