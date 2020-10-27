@@ -13,7 +13,7 @@ Comments
 
 ## Folders
 + installation : This folder is for all contents regarding ArchLinux installation
-Subfolders
+> Subfolders
 ```
 1. guides  : This is used for all guides regarding ArchLinux installation
 2. scripts : This is used for all install scripts for ArchLinux and config installs
