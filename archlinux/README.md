@@ -4,10 +4,10 @@
 
 # Contents
 ## Files
-+ installation/scripts
+1. installation/scripts
 > ArchLinux Minimal Install.sh
 > ArchLinux Post Installation.sh  : A W.I.P Install script for a minimal ArchLinux installation that will reformat the drive at the moment.
-+installation/guides
+2. installation/guides
 > ArchLinux Installation.txt      : A write-up guide on how to install a minimal ArchLinux installation
 > ArchLinux Post Installation.txt : A Post-Installation write-up on things to do after installing a minimal build
 
