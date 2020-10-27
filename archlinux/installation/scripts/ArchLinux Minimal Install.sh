@@ -1,4 +1,5 @@
-[Minimal Install]
+# [Minimal Install]
+
 # -- Global Variables
 is_uefi=False
 
@@ -16,7 +17,9 @@ fi
 sudo fdisk -l 
 lsblk
 read -p "Disk Label [msdos (for MBR)|gpt (for UEFI)]: " disk_label
-read -p "Disk Partition (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
+read -p "Disk Drive (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
+read -p "Boot Partition Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " bootpart_size
+read -p "Root Partition Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " rootpart_size
 
 # Get Packages
 pacstrap_pkgs=""
@@ -59,12 +62,12 @@ if [ "$(ls /sys/firmware/efi/efivars)" ]; then
 	is_uefi=True
 fi
 timedatectl set-ntp true
-parted $disk_part mklabel $disk_label							#msdos (MBR)/gpt (UEFI)
-parted $disk_part mkpart primary ext4 1MiB 1024MiB
-parted $disk_part set 1 boot on								# Enable Bootable for Boot Partition
-parted $disk_part mkpart primary ext4 1024MiB 51200MiB
-parted $disk_part mkpart primary ext4 51200MiB 100%					# Use Remainder of the space
-mkfs.ext4 $disk_part									# ext4 
+parted $disk_part mklabel $disk_label									#msdos (MBR)/gpt (UEFI)
+parted $disk_part mkpart primary ext4 1MiB $bootpart_size				# Partition 1 : Boot
+parted $disk_part set 1 boot on											# Enable Bootable for Boot Partition
+parted $disk_part mkpart primary ext4 $bootpart_size $rootpart_size		# Partition 2 : Root
+parted $disk_part mkpart primary ext4 $rootpart_size 100%						# Partition 3 : Home; Use Remainder of the space
+mkfs.ext4 $disk_part													# ext4 
 mkfs.ext4 $disk_part2
 mkfs.ext4 $disk_part3
 # Mount
