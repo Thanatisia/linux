@@ -37,5 +37,5 @@ else
 fi
 
 git add $files
-git commit -m $msg
+git commit -m "\"$msg\""
 git push origin $origin
