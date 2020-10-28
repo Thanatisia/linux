@@ -62,6 +62,7 @@ if [ "$(ls /sys/firmware/efi/efivars)" ]; then
 	is_uefi=True
 fi
 timedatectl set-ntp true
+echo "Partitioning..."
 parted $disk_part mklabel $disk_label									#msdos (MBR)/gpt (UEFI)
 parted $disk_part mkpart primary ext4 1MiB $bootpart_size				# Partition 1 : Boot
 parted $disk_part set 1 boot on											# Enable Bootable for Boot Partition
@@ -70,6 +71,7 @@ parted $disk_part mkpart primary ext4 $rootpart_size 100%						# Partition 3 : H
 mkfs.ext4 $disk_part													# ext4 
 mkfs.ext4 $disk_part2
 mkfs.ext4 $disk_part3
+echo "Partitioning completed."
 # Mount
 mount $disk_part2 /mnt
 mkdir -p /mnt/boot

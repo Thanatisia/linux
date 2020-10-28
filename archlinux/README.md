@@ -7,6 +7,7 @@
 1. installation/scripts
 ```
 ArchLinux Minimal Install.sh    : A W.I.P Install script for a minimal ArchLinux Installation that will reformat the drive at the moment.
+ArchLinux Minimal Install - Self-partition.sh : A W.I.P Install script based off "ArchLinux Minimal Install.sh" - modified to make partition controls more dynamic instead of just [ /dev/sdX1 : Boot Partition, /dev/sdX2 : Mount Partition, /dev/sdX3 : Home Partition ];
 ArchLinux Post Installation.sh  : A W.I.P Post installation script for use after an ArchLinux installation.
 ```
 2. installation/guides
@@ -17,12 +18,10 @@ ArchLinux Post Installation.txt : A Post-Installation write-up on things to do a
 
 ## Folders
 + installation : This folder is for all contents regarding ArchLinux installation
-> Subfolders
-```
+``` Subfolders
 1. guides  : This is used for all guides regarding ArchLinux installation
 2. scripts : This is used for all install scripts for ArchLinux and config installs
 ```
-
 
 ## Grabbing the individual files
 You can retrieve the scripts by 
