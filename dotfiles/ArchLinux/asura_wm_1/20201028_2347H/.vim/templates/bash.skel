@@ -1,0 +1,55 @@
+###############
+# Bash Script #
+###############
+
+####################
+# Global Variables #
+####################
+ALL_OPTIONS=("--help")
+
+##########################
+# Command Line Variables #
+##########################
+
+#
+# Get command line variables
+#
+# If option is not empty
+if [ ! -z "$1" ]; then
+	option="$1"
+
+	if [ ! -z "$2" ]; then
+		argv="$2"
+	fi
+fi
+
+#############
+# Functions #
+#############
+
+# To print out all options
+function display_all_options()
+{
+	for opt in ${option[@]}; do
+		echo "	$opt"
+	done
+}
+
+function function_name()
+{
+	# Insert your code here
+	echo "Hello World"
+}
+
+##############
+# Processing #
+##############
+
+case "$options" in
+	"--help") echo "Help"
+	 	display_all_options 
+		;;
+	*) echo "Default"
+		display_all_options
+		;;
+esac
