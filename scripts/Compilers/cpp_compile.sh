@@ -109,21 +109,21 @@ case "$option" in
         tmp_opt="${prog_params[2]}"
 
         # Validation
-        if [ "$tmp_src" == " " ]; then
+        if [ -z "$tmp_src" ]; then
             # temporary source is not empty
             read -p "Input source file: " tmp_src
         fi
         param_1_condition_1="$(echo $tmp_src | cut -d '.' -f1)"
         param_1_condition_2="$(echo $tmp_src | cut -d '.' -f2)"
 
-        if [ "$tmp_dst" == " " ]; then
+        if [ -z "$tmp_dst" ]; then
             # temporary destination is not empty
             read -p "Destination file: " tmp_dst
         fi
         param_2_condition_1="$(echo $tmp_dst | cut -d '.' -f1)"
         param_2_condition_2="$(echo $tmp_dst | cut -d '.' -f2)"
 
-        if [ "$tmp_opt" == " " ]; then
+        if [ -z "$tmp_opt" ]; then
             # Additional options
             read -p "Additional Options: " OTHER_PARAMS
         fi
