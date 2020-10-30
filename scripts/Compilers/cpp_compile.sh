@@ -5,7 +5,7 @@
 ####################
 # Global Variables #
 ####################
-ALL_OPTIONS=("--help" "--compile")
+ALL_OPTIONS=("--help" "--run" "--compile")
 
 ##########################
 # Command Line Variables #
@@ -93,6 +93,13 @@ case "$option" in
 	"--help") echo "Help"
 	 	display_all_options
         ;; 
+    "--run") echo "Running"
+        exe_file="${argv[0]}" # 1st index
+        if [ -z "$exe_file" ]; then
+            read -p "Executable file: " exe_file
+        fi
+        ./$exe_file
+        ;;
     "--compile") echo "Compiling..."
         OTHER_PARAMS=""
 
