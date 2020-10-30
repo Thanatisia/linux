@@ -68,6 +68,7 @@ function check_if_package_is_installed()
 function compile()
 {
     echo "Compiling via mcs..."
+    # Package for mono and mcs to compile C#
     pkg_name="extra/mono"
     installed="$(check_if_package_is_installed "pacman" "$pkg_name")"
     line_ret="$(echo $installed | wc -l)"
