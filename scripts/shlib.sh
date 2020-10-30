@@ -233,6 +233,33 @@ function remove_lines_from_Head()
 	echo "$res"
 }
 
+######################
+# Package Management #
+######################
+function check_if_package_is_installed()
+{
+    package_manager_list=("pacman" "yay" "apt")
+    if [ ! -z "$1" ]; then
+        package_manager="$1"
+
+        if [ ! -z "$2" ]; then
+            pkg_name="$2"
+
+            case "$package_manager" in 
+                "pacman") installed="$(pacman -Qq | grep "$pkg_name")"
+                    ;;
+                *) echo "Invalid package manager"
+                    ;;
+            esac
+        else
+            installed="None"
+        fi
+    else
+        installed="None"
+    fi
+    echo "$installed"
+}
+
 ################
 # Partitioning #
 ################
