@@ -233,6 +233,39 @@ function remove_lines_from_Head()
 	echo "$res"
 }
 
+function remove_trailing_slashr()
+{
+	#
+	# Remove trailing '\r' character
+	#
+	if [ ! -z "$1" ]; then
+		filename=$1
+	else
+		read -p "Filename: " filename
+	fi
+	sed -i 's/\r$//' $filename
+}
+
+function remove_trailing_char()
+{
+	#
+	# Remove trailing character
+	#
+	if [ ! -z "$1" ]; then
+		filename=$1
+
+		if [ ! -z "$2" ]; then
+			pattern="$2"
+		else
+			read -p "Target trailing character: " pattern
+		fi
+	else
+		read -p "Filename: " filename
+		read -p "Target trailing character: " pattern
+	fi
+	sed -i 's/$pattern$//' $filename
+}
+
 ######################
 # Package Management #
 ######################
