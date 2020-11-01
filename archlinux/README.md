@@ -7,7 +7,9 @@
 1. installation/scripts
 ```
 ArchLinux Minimal Install.sh    : A W.I.P Install script for a minimal ArchLinux Installation that will reformat the drive at the moment.
-ArchLinux Minimal Install - Self-partition.sh : A W.I.P Install script based of "ArchLinux Minimal Install.sh" - modified to make partition controls more dynamic and terminal options for single line installations (TESTING).
+ArchLinux_Minimal_Install-Manual.sh : A combined version of the seperated string - ignores the issue of arch-chroot for the time being, do not use this unless for coding references. Thank you!
+ArchLinux_Minimal_Install-Manual_Part1.sh : Use this in the main installer iso; Previously "ArchLinux Minimal Install - Self-Partition.sh", this is part 1 of a W.I.P Install script based of "ArchLinux Minimal Install.sh" - modified to make partition controls more dynamic and terminal options for single line installations (TESTING).
+ArchLinux_Minimal_Install-Manual_Part2.sh : Use this after arch-chroot /mnt; Previously "ArchLinux_Minimal_Install - Self-Partition.sh", this is part 2 of a W.I.P Install script based of "ArchLinux Minimal Install.sh" - modified to make partition controls more dynamic and terminal options for single line installations (TESTING)
 ArchLinux Post Installation.sh  : A W.I.P Post installation script for use after an ArchLinux installation.
 ```
 2. installation/guides
@@ -40,8 +42,11 @@ git clone https://github.com/Thanatisia/linux/tree/master/archlinux
 ArchLinux Minimal Install.sh:
   curl -o "ArchLinux Minimal Install.sh" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/scripts/ArchLinux%20Minimal%20Install.sh"
 
-ArchLinux Minimal Install - Self-partition.sh:
-  curl -o "ArchLinux Minimal Install - Self-partition.sh" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/scripts/ArchLinux%20Minimal%20Install%20-%20Self-partition.sh"
+ArchLinux_Minimal_Install-Manual_Part1.sh:
+  curl -o "ArchLinux_Minimal_Install-Manual_Part1.sh" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part1.sh"
+
+ArchLinux_Minimal_Install-Manual_Part2.sh:
+  curl -o "ArchLinux_Minimal_Install-Manual_Part2.sh" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part2.sh"
 
 ArchLinux Post Installation.sh:
   curl -o "ArchLinux Post Installation.sh" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/scripts/ArchLinux%20Post%20Installation.sh"
@@ -52,4 +57,11 @@ ArchLinux Installation.txt:
 
 ArchLinux Post Installation.txt:
   curl -o "ArchLinux Post Installation.txt" "https://raw.githubusercontent.com/Thanatisia/linux/master/archlinux/installation/guides/ArchLinux%20Post%20Installation.txt"
+```
+
+# Changelogs
+## Folders
++ installation/scripts/ 
+```
+20201101 1112H : Seperated 'ArchLinux Minimal Install - Self-partition.sh' to 2 parts - 'ArchLinux_Minimal_Install-Manual_Part1.sh' and 'ArchLinux_Minimal_Install-Manual_Part2.sh'
 ```

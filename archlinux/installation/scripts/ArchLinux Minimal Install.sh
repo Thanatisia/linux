@@ -16,10 +16,20 @@ fi
 # Get Partition
 sudo fdisk -l 
 lsblk
-read -p "Disk Label [msdos (for MBR)|gpt (for UEFI)]: " disk_label
+echo "WARNING: Please note - only enter if you want to reformat with a new disk label"
+read -p "Disk Label [msdos (for MBR)|gpt (for UEFI)]: " disk_label # Optional
 read -p "Disk Drive (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
+while [ -z "$disk_part" ]; then
+	read -p "Disk Drive (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
+done
 read -p "Boot Partition Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " bootpart_size
+if [ -z "$bootpart_size" ]; then
+	bootpart_size="1024MiB"
+fi
 read -p "Root Partition Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " rootpart_size
+while [ -z "$rootpart_size" ]; do
+	read -p "Root Partition Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " rootpart_size
+done
 
 # Get Packages
 pacstrap_pkgs=""
@@ -28,7 +38,7 @@ echo "Default Pacstrap: $default_pacstrap"
 read -p "Add anymore packages? [Y|N]: " add_additional
 if [ "$add_additional" == "Y" ]; then
 	read -p "Other packages: " other_pkgs
-	default_pacstrap+=$other_pkgs
+	default_pacstrap+=" $other_pkgs"
 fi
 pacstrap_pkgs=$default_pacstrap
 
@@ -48,6 +58,9 @@ fi
 # Get multilib enable/disable confirmation
 read -p "Enable multilib 64-bit control? [Y|N]: " enable_multilib			# To enable multilib/leave it
 
+# Get hostname
+read -p "Hostname: " hostname
+
 # Bootloader
 read -p "Bootloader [Grub/Syslinux]: " bootloader
 
@@ -63,7 +76,10 @@ if [ "$(ls /sys/firmware/efi/efivars)" ]; then
 fi
 timedatectl set-ntp true
 echo "Partitioning..."
-parted $disk_part mklabel $disk_label									#msdos (MBR)/gpt (UEFI)
+if [ ! -z "$disk_label" ]; then
+	# If disk label is not empty - reset
+	parted $disk_part mklabel $disk_label									#msdos (MBR)/gpt (UEFI)
+fi
 parted $disk_part mkpart primary ext4 1MiB $bootpart_size				# Partition 1 : Boot
 parted $disk_part set 1 boot on											# Enable Bootable for Boot Partition
 parted $disk_part mkpart primary ext4 $bootpart_size $rootpart_size		# Partition 2 : Root
@@ -89,7 +105,7 @@ echo "KEYMAP=$key_layout" >> /etc/vconsole.conf
 if [ "$enable_multilib" == "Y" ]; then
 	sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 fi
-echo "Hostname: " hostname
+echo "Hostname: " $hostname
 echo "$hostname" >> /etc/hostname # Create Hostname
 echo "127.0.0.1	localhost" >> /etc/hosts 
 echo "::1       localhost" >> /etc/hosts # 7 empty spaces to localhost
