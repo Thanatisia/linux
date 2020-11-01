@@ -1,3 +1,7 @@
+#----------------------------
+# Rofi menu utilities
+#----------------------------
+
 function rofi_dmenu()
 {
 	str="$1"
@@ -7,4 +11,3 @@ function rofi_dmenu()
 	echo "$res"
 }
 
-echo "$(rofi_dmenu "HelloWorld\nHello World")"
