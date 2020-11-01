@@ -315,3 +315,17 @@ function get_number_of_partitions()
 	number_of_partitions="$(lsblk | grep $target_Device | sed -n '1!p' | wc -l)"
 	echo "$number_of_partitions"
 }
+
+#############
+# Variables #
+#############
+function join_array()
+{
+	options_array=($1)
+	options=""
+	# for opt in "${options_array[@]}"; do
+	for opt in "${options_array[@]}"; do
+		options+="$opt\n"
+	done
+	echo "$options"
+}
