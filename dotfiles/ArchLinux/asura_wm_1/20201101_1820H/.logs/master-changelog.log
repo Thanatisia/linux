@@ -1,0 +1,50 @@
+2020-09-30_00-06-20
+[Create]
+Created master changelog version 0.1
+- this is the first update for the master changelog, please place all changelogs inside here if you want; Do take note of the category. Many thanks!
+
+2020-09-30 00-10-23
+[Modify]
+Title: Modified master changelog version 0.2
+Changelog: - Modified the source code for update-changelog.sh to include a keyword to each value
+
+2020-09-30 00-11-26
+[Test]
+Title: Testing version 0.2
+Changelog: This is just a test for consistency.
+
+2020-09-30 00-12-39
+[Test - Multiline]
+Title: Testing for multiline input for version 0.2 (Hypothesis: Use '\' for Newline)
+Changelog: Test Test Line 2 Test Line 3
+
+2020-09-30 00-15-06
+[Test]
+Title: Testing version 0.3
+Changelog: Testing for version 0.3 - Script 'update-changelog.sh' has been modified with a new line 'echo "Master Changelog [] has been updated as of [2020-09-29_22-51-39]"'
+
+2020-10-01 06-55-18
+[Update]
+Title: Updated GRUB
+Changelog: - Changed GRUB Background image;
+
+2020-10-01 06-56-31
+[Update]
+Title: Updated ~/.bashrc
+Changelog: Updated Bashrc with alias for config path [grubcfg] and alias [update-grub]
+
+2020-10-01 06-59-23
+[Update]
+Title: Updated "update-changelog.sh" script
+Changelog: Modified and made script to ask user for category if unspecified - if user does not enter; use Default value for category
+
+2020-10-01 07-11-28
+[Update]
+Title: Update "update-changelog.sh"
+Changelog: Modified and added a "help menu" for the program; Added a validator at the end to check if category is empty -> Empty means it is "help"
+
+2020-10-01 07-21-48
+[Update]
+Title: Renamed update-changelog.sh to manage-changelog.sh
+Changelog: Renamed update-changelog.sh to manage-changelog.sh; Updated manage-changelog.sh
+

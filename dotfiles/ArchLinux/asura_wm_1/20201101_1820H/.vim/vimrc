@@ -1,0 +1,194 @@
+"------------------------------
+" VIM Resource Control (VimRC)
+"------------------------------
+
+" General Leader key to put in the front of any other key
+let mapleader="\<space>"
+
+" ----- Basic defaults
+set noerrorbells | "Remove Bells when errors"
+set tabstop=4 softtabstop=4 | "Set 4 characters long, 4 spaces long"
+" Change colorscheme
+" Examples:
+	" color elflord
+	" colorscheme koehler
+set shiftwidth=4 | "Tab will shift by only 4 spaces"
+set expandtab | "Convert tab character to spaces"
+set smartindent | "System will try to indent"
+set nu | "Set line number"
+set nowrap | "Remove newline, go all the way"
+set smartcase | "Case Sensitive searching"
+set incsearch | "Incremental search for while"
+syntax on | "Enable Syntax Highlighting"
+filetype indent on | "Enable file indentations"
+set encoding=utf-8	| "Set Encoding"
+set number relativenumber | "Enable Line Numbering"
+set colorcolumn=80 | "Set colorcolumn"
+highlight ColorColumn ctermbg=0 guibg=lightgrey | "Highlight the color column"
+
+" ----- Plugins
+" Set the runtime path to include Vundle and initialize"
+" set rtp+=~/.vim/plugged
+" Set and start Plugin Manager "
+" call plug#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call plugin#begin('~/some/path/here')
+call plug#begin('~/.vim/plugged')
+
+" Tell plug to do installations "
+
+"# -- Syntax"
+Plug 'PotatoesMaster/i3-vim-syntax' | "# -- i3 Vim Syntax
+"# -- Colorschemes"
+Plug 'morhetz/gruvbox' | "# -- Colorscheme: Gruvbox"
+Plug 'NLKNguyen/papercolor-theme' | "# -- Colorscheme: PaperColor
+Plug 'flazz/vim-colorschemes' | "# -- Colorscheme pack
+Plug 'dracula/vim', {'as':'dracula'} | "# -- Colorscheme: Dracula; Output as folder 'dracula'"
+Plug 'ayu-theme/ayu-vim' | "# -- Colorscheme: ayu
+Plug 'junegunn/seoul256.vim' | "# -- Colorscheme: seoul256
+"# -- Status Line"
+Plug 'vim-airline/vim-airline' | "# -- airline
+Plug 'vim-airline/vim-airline-themes' | "# -- airline
+Plug 'itchyny/lightline.vim' | "# -- Statusline: Lightline"
+"# -- Utilities"
+Plug 'scrooloose/nerdtree' | "# -- NerdTree - a Tree Directory
+"Plug 'kien/ctrlp' | "# -- File Search "
+"# -- Code/Programming"
+Plug 'vim-scripts/AutoComplPop' | "# -- Vim's built-in Autocomplete plugin
+Plug 'MarcWeber/vim-addon-mw-utils' | "# -- Dependency for vim-snipmate
+Plug 'tomtom/tlib_vim' | "# -- Dependency for vim-snipmate
+Plug 'garbas/vim-snipmate' | "# -- Snippets for Vim
+"# Removed and replaced with 'personal'
+Plug 'honza/vim-snippets' | "# -- Snippet Lists
+Plug 'honza/vim-snippets-personal' | "# -- Personal modification to vim-snippets"
+Plug 'mbbill/undotree' | "# -- Undo tree "
+"Plug 'vim-pandoc/vim-pandoc' | "# -- Pandoc Plugins
+"Plug 'vim-pandoc/vim-pandoc-syntax' | "# -- Pandoc Plugins
+call plug#end() | "# End Plugin Manager"
+
+"--------------------------
+"Color settings
+"--------------------------
+" set background=light
+" Set Colorscheme"
+" set termguicolors
+colorscheme gruvbox
+let g:airline_theme = 'gruvbox'
+let g:gruvbox_termcolors = 256
+let g:gruvbox_contrast_dark="hard"
+set background=dark
+
+"------------------------
+"statusline
+"------------------------
+"#-- Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline_statusline_ontop=1 | "place statusline on top"
+
+"#-- Lightline
+let g:lightline = {
+      \   'colorscheme': 'deus',
+      \   'active': {
+      \     'left':[ [ 'mode', 'paste' ],
+      \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
+      \     ]
+      \   },
+      \   'component': {
+      \     'lineinfo': ' %3l:%-2v 󰣘',
+      \   },
+      \   'component_function': {
+      \     'gitbranch': 'fugitive#head',
+      \   }
+      \ }
+let g:lightline.separator = {
+      \   'left': '', 'right': ''
+      \}
+let g:lightline.subseparator = {
+      \   'left': '', 'right': ''
+      \}
+
+let g:lightline.tabline = {
+      \   'left': [ ['tabs'] ],
+      \   'right': [ ['close'] ]
+      \ }
+ 
+"------------
+"Keybindings
+"------------
+" -- Utilities
+" Toggle NERDTree
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+" -- General Controls
+map <C-S> :w<Enter> | "# Save (only)"
+nmap <C-c> :qa<Enter> | "# Execute only in normal mode; Exit unless buffers exist."
+imap <C-c> <Esc>yy<Esc>i| "# Execute only in INSERT mode; go to normal mode; copy/yank line and go back to INSERT"
+imap <C-v> <Esc>p<Esc>i| "# Execute only in INSERT mode; go to normal mode; paste line and go back to INSERT"
+imap <C-Z> <Esc>u<Esc>i| "# Execute only in INSERT mode; go to normal mode; change backwards by 1; go back to INSERT"
+nmap <C-Z> <Esc><C-r><Esc>i| "# Execute only in INSERT mode; go to normal mode; redo forward by 1; go back to INSERT"
+" map ,l :!res="$(dmenu -p "Runner: " <&- )"<Enter> && $res %
+map ,r :wq<Enter> | "# Save and exit"
+" -- Programming/Code
+" Display command to execute this file with python; let user edit accordingly
+nmap ,p :w<Enter> :!python %
+" Display command to execute this file with g++; let user edit accordingly
+" nmap ,c :w<Enter> :!g++ % -o %:h.exe
+" Display command to execute this file with shell; let user edit accordingly
+nmap ,s :w<Enter> :!sh %
+
+" -- Gruvbox
+
+" ----- Extras
+" Use system clipboard (Requires clipboard program)
+" set clipboard+=unnamedplus
+
+" ----- Autocommands : Have a command run automatically
+" Automatically vertically center the document when entering Insert Mode
+"norm <cmd>: normal command <command>"
+
+" -- Execute on entering Insert mode"
+autocmd InsertEnter * norm zz
+
+" -- Execute on Vim Start
+" On vim start - automatically log the current file into vim_last_edited.log as the last edited.
+autocmd VimEnter * !echo "%" | tee -a ~/.logs/vim_last_edited.log
+" Start NERDTree on vim start
+" autocmd VimEnter * NERDTree
+
+" -- Execute on new file open"
+"# When a new html file is opened - automatically copy the skeleton of html.skel"
+"This will read in (essentially copy/paste) `~/.vim/templates/html.skel` when creating a new file that end in `.html`."
+autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
+"# When a new cpp file is opened - automatically copy the skeleton of cpp.skel"
+autocmd BufNewFile *.cpp 0r ~/.vim/templates/cpp.skel
+"# When a new python file is opened - automatically copy the skeleton of python.skel"
+autocmd BufNewFile *.py 0r ~/.vim/templates/python.skel
+"# When a new bash file is opened - automatically copy the skeleton of bash.skel"
+autocmd BufNewFile *.sh 0r ~/.vim/templates/bash.skel
+"# When a new C# file is opened - automatically copy the skeleton of cs.skel"
+autocmd BufNewFile *.cs 0r ~/.vim/templates/cs.skel 
+"# When a new README file is opened - automatically copy the skeleton of README.skel
+autocmd BufNewFile README.md 0r ~/.vim/templates/README.skel
+"# When a new ASSEMBLY file is opened - automatically copy the skeleton of asm.skel
+autocmd BufNewFile *.asm 0r ~/.vim/templates/asm.skel
+
+" -- Execute on new file open AND after saving"
+" autocmd BufNewFile,BufWritePre *.sh !chmod a+x % |& tee -a ~/.logs/vim-logs/bash-run.log
+
+" -- Execute after opening but before writing the file"
+" autocmd BufWritePre"
+
+" -- Execute after saving and exit"
+"  Whenever i am editing a certain type of file, after you save the file
+"  if the file is saved as mentioned, 
+"  Run the command (i.e. recompile this program)
+"  autocmd BufWritePost <path><extension>,<otherpath><otherextension>
+"  !<command>
+
+" Automatically compile all cpp files on save using g++ and log
+autocmd BufWritePost *.cpp !cpp_compile.sh "%" "main.exe" " " |& tee -a "compile.log" && main.exe 
+" Automatically run .py file opened and saved using python and log
+" autocmd BufWritePost *.py !python3.8 "%" | tee -a ~/.logs/vim-logs/python-run.log
+autocmd BufWritePost *.py !python_run.sh "%" |& tee -a ~/.logs/vim-logs/python-run.log
+" autocmd BufWritePost *.sh !sh % |& tee -a ~/.logs/vim-logs/bash-run.log
+autocmd BufWritePost *.cs !mcs %<CR> | tee -a ~/.logs/vim-logs/cs-compile.log && echo "Compilation successful"; mono %:r.exe<CR> | tee -a ~/.logs/vim-logs/cs-compile.log || echo "Compilation error..." | tee -a ~/.logs/vim-logs/cs-compile.log

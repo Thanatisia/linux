@@ -1,0 +1,102 @@
+IN-USE  BSSID              SSID                      MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        44:FE:3B:5F:FC:AE  SINGTEL-FCAE              Infra  1     130 Mbit/s  100     ▂▄▆█  WPA2      
+        AA:DB:03:12:27:31  AndroidAP4EEB             Infra  11    130 Mbit/s  100     ▂▄▆█  WPA2      
+*       44:FE:3B:5F:FC:B0  SINGTEL-FCAE_5G           Infra  48    270 Mbit/s  100     ▂▄▆█  WPA2      
+        E4:3E:D7:57:4E:E4  SINGTEL-4EE2              Infra  7     130 Mbit/s  95      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7A  SINGTEL-8274              Infra  11    130 Mbit/s  84      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7B  SINGTEL-8274              Infra  100   540 Mbit/s  80      ▂▄▆_  WPA2      
+        32:CD:A7:EF:EA:A7  DIRECT-1wCLX-6260 Series  Infra  11    54 Mbit/s   79      ▂▄▆_  WPA2      
+        E4:3E:D7:57:4E:E3  SINGTEL-4EE2_5G           Infra  149   405 Mbit/s  74      ▂▄▆_  WPA2      
+        E0:8E:3C:14:08:50  SINGTEL(5G)-084E          Infra  52    405 Mbit/s  67      ▂▄▆_  WPA1 WPA2 
+        F4:17:B8:25:82:76  SINGTEL-8274              Infra  1     130 Mbit/s  64      ▂▄▆_  WPA2      
+        F4:17:B8:25:82:77  SINGTEL-8274              Infra  100   540 Mbit/s  59      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  87      ▂▄▆█  WPA1 WPA2 
+        D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  77      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  50      ▂▄__  WPA2      
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
+IN-USE  BSSID              SSID   MODE   CHAN  RATE        SIGNAL  BARS  SECURITY 
+        D6:25:8B:98:EC:9D  Hello  Infra  1     195 Mbit/s  85      ▂▄▆█  WPA2     
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  95      ▂▄▆█  WPA2      
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  74      ▂▄▆_  WPA1 WPA2 
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  60      ▂▄▆_  WPA2      
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  95      ▂▄▆█  WPA2      
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  85      ▂▄▆█  WPA1 WPA2 
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  60      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  90      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  89      ▂▄▆█  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  60      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  89      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  66      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  52      ▂▄__  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  72      ▂▄▆_  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  65      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  57      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  87      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  73      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  60      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  80      ▂▄▆_  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  77      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  49      ▂▄__  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  89      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  77      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  59      ▂▄▆_  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  87      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  78      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  49      ▂▄__  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  87      ▂▄▆█  WPA1 WPA2 
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  77      ▂▄▆_  WPA2      
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  49      ▂▄__  WPA2      
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+*       D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  80      ▂▄▆_  WPA2      
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  74      ▂▄▆_  WPA1 WPA2 
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  59      ▂▄▆_  WPA2      
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
+IN-USE  BSSID              SSID                      MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        44:FE:3B:5F:FC:AE  SINGTEL-FCAE              Infra  1     130 Mbit/s  100     ▂▄▆█  WPA2      
+        32:07:4D:34:F3:6B  AndroidAPF36B             Infra  11    130 Mbit/s  100     ▂▄▆█  WPA2      
+        44:FE:3B:5F:FC:B0  SINGTEL-FCAE_5G           Infra  48    270 Mbit/s  100     ▂▄▆█  WPA2      
+        E4:3E:D7:57:4E:E4  SINGTEL-4EE2              Infra  7     130 Mbit/s  94      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7A  SINGTEL-8274              Infra  11    130 Mbit/s  87      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7B  SINGTEL-8274              Infra  100   540 Mbit/s  82      ▂▄▆█  WPA2      
+        E4:3E:D7:57:4E:E3  SINGTEL-4EE2_5G           Infra  40    405 Mbit/s  70      ▂▄▆_  WPA2      
+        32:CD:A7:EF:EA:A7  DIRECT-1wCLX-6260 Series  Infra  7     54 Mbit/s   67      ▂▄▆_  WPA2      
+        F4:17:B8:25:82:77  SINGTEL-8274              Infra  100   540 Mbit/s  67      ▂▄▆_  WPA2      
+        F4:17:B8:25:82:76  SINGTEL-8274              Infra  1     130 Mbit/s  65      ▂▄▆_  WPA2      
+        F4:17:B8:14:57:10  Low Family                Infra  11    130 Mbit/s  42      ▂▄__  WPA2      
+        90:F6:52:A7:6F:44  kelvintay                 Infra  4     270 Mbit/s  35      ▂▄__  WPA1 WPA2 
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
+IN-USE  BSSID              SSID       MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        D6:25:8B:98:EC:9D  Hello      Infra  1     195 Mbit/s  99      ▂▄▆█  WPA2      
+        E8:94:F6:60:69:44  NCTMC_Dev  Infra  1     135 Mbit/s  65      ▂▄▆_  WPA1 WPA2 
+        90:61:0C:6C:20:21  mypro1k    Infra  10    130 Mbit/s  52      ▂▄__  WPA2      
+IN-USE  BSSID  SSID  MODE  CHAN  RATE  SIGNAL  BARS  SECURITY 
+IN-USE  BSSID              SSID                      MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        44:FE:3B:5F:FC:AE  SINGTEL-FCAE              Infra  1     130 Mbit/s  100     ▂▄▆█  WPA2      
+        70:2C:1F:5F:2C:58  [room a/c] Samsung        Infra  1     65 Mbit/s   100     ▂▄▆█  WPA2      
+        44:FE:3B:5F:FC:B0  SINGTEL-FCAE_5G           Infra  48    270 Mbit/s  100     ▂▄▆█  WPA2      
+        E4:3E:D7:57:4E:E4  SINGTEL-4EE2              Infra  7     130 Mbit/s  94      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7A  SINGTEL-8274              Infra  11    130 Mbit/s  84      ▂▄▆█  WPA2      
+        F4:17:B8:25:82:7B  SINGTEL-8274              Infra  100   540 Mbit/s  84      ▂▄▆█  WPA2      
+        E0:8E:3C:14:08:4F  SINGTEL-084E              Infra  6     130 Mbit/s  80      ▂▄▆_  WPA1 WPA2 
+        32:CD:A7:EF:EA:A7  DIRECT-1wCLX-6260 Series  Infra  7     54 Mbit/s   77      ▂▄▆_  WPA2      
+        F4:17:B8:25:82:77  SINGTEL-8274              Infra  100   540 Mbit/s  70      ▂▄▆_  WPA2      
+        E4:3E:D7:57:4E:E3  SINGTEL-4EE2_5G           Infra  40    405 Mbit/s  69      ▂▄▆_  WPA2      
+        E0:8E:3C:14:08:50  SINGTEL(5G)-084E          Infra  52    405 Mbit/s  67      ▂▄▆_  WPA1 WPA2 
+        F4:17:B8:25:82:76  SINGTEL-8274              Infra  1     130 Mbit/s  59      ▂▄▆_  WPA2      
+        F4:17:B8:18:51:1C  Low Family                Infra  11    130 Mbit/s  59      ▂▄▆_  WPA2      
+        F4:17:B8:14:57:10  Low Family                Infra  11    130 Mbit/s  47      ▂▄__  WPA2      
+        90:F6:52:A7:6F:44  kelvintay                 Infra  4     270 Mbit/s  32      ▂▄__  WPA1 WPA2 
+        88:3D:24:A9:BA:DC  batcave-asus              Infra  6     130 Mbit/s  27      ▂___  WPA2      
+        00:26:75:C9:C9:CA  Singtel7002-C9C9          Infra  3     130 Mbit/s  25      ▂___  WPA1 WPA2 

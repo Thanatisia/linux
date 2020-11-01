@@ -1,0 +1,230 @@
+#######################
+# 09/27/2020 22:19:18 #
+#######################
+Command: sudo yay -S sublime | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: sublime
+[1m[33m ->[0m[0m Avoid running yay as root/sudo.
+#######################
+# 09/27/2020 22:19:39 #
+#######################
+Command: sudo yay -S sublime | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: sublime
+:: [1mChecking for conflicts...[0m
+:: [1mChecking for inner conflicts...[0m
+[Aur:1]  sublime-text-3-3.3211-1
+
+:: [1mDownloaded PKGBUILD (1/1): sublime-text-3[0m
+  1 sublime-text-3                           (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> diff --git /home/admin/asura/.cache/yay/sublime-text-3/.gitignore /home/admin/asura/.cache/yay/sublime-text-3/.gitignore
+new file mode 100644
+index 0000000..2f39e2f
+--- /dev/null
++++ /home/admin/asura/.cache/yay/sublime-text-3/.gitignore
+@@ -0,0 +1,4 @@
++/*.tar.bz2
++/*.pkg.tar.xz
++/pkg
++/src
+diff --git /home/admin/asura/.cache/yay/sublime-text-3/LICENSE /home/admin/asura/.cache/yay/sublime-text-3/LICENSE
+new file mode 100644
+index 0000000..981842a
+--- /dev/null
++++ /home/admin/asura/.cache/yay/sublime-text-3/LICENSE
+@@ -0,0 +1,13 @@
++Maintainer note:
++Sublime Text is free to use, if you want access to the newer builds, with the package
++`sublime-text-4-dev` or `sublime-text-dev`, you'll need a paid license.
++
++Buying a license also supports the development of the editor.
++
++---
++
++Sublime Text may be downloaded and evaluated for free, however a license must be purchased for
++continued use. Licenses are per-user, rather than per-machine, so you can enjoy Sublime Text on as
++many computers and operating systems as you wish with your license.
++
++For more information, please visit https://www.sublimetext.com/buy
+diff --git /home/admin/asura/.cache/yay/sublime-text-3/PKGBUILD /home/admin/asura/.cache/yay/sublime-text-3/PKGBUILD
+new file mode 100644
+index 0000000..411ba05
+--- /dev/null
++++ /home/admin/asura/.cache/yay/sublime-text-3/PKGBUILD
+@@ -0,0 +1,53 @@
++# Maintainer: marcospb19 <marcospb19@hotmail.com>
++
++pkgname=sublime-text-3
++pkgver=3.3211
++pkgrel=1
++pkgdesc="Sophisticated text editor for code, html and prose - stable build"
++arch=('x86_64')
++url='https://www.sublimetext.com/3'
++license=('custom')
++depends=('libpng' 'gtk2')
++
++replaces=('sublime-text-3-imfix')
++
++conflicts=('sublime-text-4-dev'
++           'sublime-text-3-imfix'
++           'sublime-text-imfix'
++           'sublime-text-nightly'
++           'sublime-text-dev'
++           'sublime-text2')
++
++provides=('sublime-text' 'sublime')
++
++source=(
++    "https://download.sublimetext.com/sublime_text_3_build_${pkgver:2}_x64.tar.bz2"
++    'LICENSE'
++)
++sha256sums=('0b3c8ca5e6df376c3c24a4b9ac2e3b391333f73b229bc6e87d0b4a5f636d74ee'
++            '339dbd1b6ae3e699809afcdd6c690299e6fa0d385aa2ef658a52d336a3f8107f')
++
++package() {
++    cd "${srcdir}"
++
++    # Install sublime text 3
++    install -dm755 "${pkgdir}/opt"
++    cp --preserve=mode -r "sublime_text_3" "${pkgdir}/opt/sublime_text_3"
++
++    # Install icons
++    for res in 128x128 16x16 256x256 32x32 48x48; do
++        install -dm755 "${pkgdir}/usr/share/icons/hicolor/${res}/apps"
++        ln -s "/opt/sublime_text_3/Icon/${res}/sublime-text.png" "${pkgdir}/usr/share/icons/hicolor/${res}/apps/sublime-text.png"
++    done
++
++    # Install desktop entry and executable
++    install -dm755 "${pkgdir}/usr/share/applications"
++    install -Dm644 "sublime_text_3/sublime_text.desktop" "${pkgdir}/usr/share/applications/sublime_text.desktop"
++    sed -i 's#/opt/sublime_text/sublime_text#subl#g' "${pkgdir}/usr/share/applications/sublime_text.desktop"
++    install -dm755 "${pkgdir}/usr/bin"
++    ln -s "/opt/sublime_text_3/sublime_text" "${pkgdir}/usr/bin/subl"
++
++    # Install license file
++    install -d "${pkgdir}/usr/share/licenses/${pkgname}"
++    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
++}
+
+==> Proceed with install? [Y/n] :: [1m(1/1) Parsing SRCINFO: sublime-text-3[0m
+[1m[32m==>(B[m[1m Making package: sublime-text-3 3.3211-1 (Sun 27 Sep 2020 10:20:04 PM)(B[m
+[1m[32m==>(B[m[1m Retrieving sources...(B[m
+[1m[34m  ->(B[m[1m Downloading sublime_text_3_build_3211_x64.tar.bz2...(B[m
+[1m[34m  ->(B[m[1m Found LICENSE(B[m
+[1m[32m==>(B[m[1m Validating source files with sha256sums...(B[m
+[1m[32m==>(B[m[1m Making package: sublime-text-3 3.3211-1 (Sun 27 Sep 2020 10:20:10 PM)(B[m
+[1m[32m==>(B[m[1m Checking runtime dependencies...(B[m
+[1m[32m==>(B[m[1m Checking buildtime dependencies...(B[m
+[1m[32m==>(B[m[1m Retrieving sources...(B[m
+[1m[34m  ->(B[m[1m Found sublime_text_3_build_3211_x64.tar.bz2(B[m
+[1m[34m  ->(B[m[1m Found LICENSE(B[m
+[1m[32m==>(B[m[1m Validating source files with sha256sums...(B[m
+[1m[32m==>(B[m[1m Removing existing $srcdir/ directory...(B[m
+[1m[32m==>(B[m[1m Extracting sources...(B[m
+[1m[34m  ->(B[m[1m Extracting sublime_text_3_build_3211_x64.tar.bz2 with bsdtar(B[m
+[1m[32m==>(B[m[1m Sources are ready.(B[m
+[1m[32m==>(B[m[1m Making package: sublime-text-3 3.3211-1 (Sun 27 Sep 2020 10:20:14 PM)(B[m
+[1m[32m==>(B[m[1m Checking runtime dependencies...(B[m
+[1m[32m==>(B[m[1m Checking buildtime dependencies...(B[m
+[1m[32m==>(B[m[1m Entering fakeroot environment...(B[m
+[1m[32m==>(B[m[1m Starting package()...(B[m
+[1m[32m==>(B[m[1m Tidying install...(B[m
+[1m[34m  ->(B[m[1m Removing libtool files...(B[m
+[1m[34m  ->(B[m[1m Purging unwanted files...(B[m
+[1m[34m  ->(B[m[1m Removing static library files...(B[m
+[1m[34m  ->(B[m[1m Stripping unneeded symbols from binaries and libraries...(B[m
+[1m[34m  ->(B[m[1m Compressing man and info pages...(B[m
+[1m[32m==>(B[m[1m Checking for packaging issues...(B[m
+[1m[32m==>(B[m[1m Creating package "sublime-text-3"...(B[m
+[1m[34m  ->(B[m[1m Generating .PKGINFO file...(B[m
+[1m[34m  ->(B[m[1m Generating .BUILDINFO file...(B[m
+[1m[34m  ->(B[m[1m Generating .MTREE file...(B[m
+[1m[34m  ->(B[m[1m Compressing package...(B[m
+[1m[32m==>(B[m[1m Leaving fakeroot environment.(B[m
+[1m[32m==>(B[m[1m Finished making: sublime-text-3 3.3211-1 (Sun 27 Sep 2020 10:20:20 PM)(B[m
+[1m[32m==>(B[m[1m Cleaning up...(B[m
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) sublime-text-3-3.3211-1
+
+Total Installed Size:  33.18 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing sublime-text-3...
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating icon theme caches...
+(3/3) Updating the desktop file MIME type cache...
+
+#######################
+# 10/02/2020 04:41:34 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): #######################
+# 10/02/2020 04:43:20 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): #######################
+# 10/02/2020 04:45:10 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): #######################
+# 10/02/2020 04:50:30 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): :: [1mChecking for conflicts...[0m
+:: [1mChecking for inner conflicts...[0m
+[Repo Make:1]  woff2-1.0.2-3
+[Aur:1]  ttf-all-the-icons-4.0.1-1
+
+==> Remove make dependencies after install? [y/N] :: [1mDownloaded PKGBUILD (1/1): ttf-all-the-icons[0m
+  1 ttf-all-the-icons                        (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> #######################
+# 10/02/2020 04:50:47 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): #######################
+# 10/02/2020 05:07:31 #
+#######################
+Command: sudo yay -S ttf-material-design-icons | tee -a /home/admin/asura/.logs//aur_installproc.log
+Packages: ttf-material-design-icons
+:: [1mThere are 2 providers available for ttf-material-design-icons:
+:: [1mRepository AUR
+    [0m1) ttf-material-design-icons 2) ttf-all-the-icons [0m
+
+Enter a number (default=1): 

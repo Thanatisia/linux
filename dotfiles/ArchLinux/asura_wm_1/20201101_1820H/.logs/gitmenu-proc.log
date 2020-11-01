@@ -1,0 +1,63 @@
+#######################
+# 10/27/2020 23:01:10 #
+#######################
+#######################
+# 10/27/2020 23:02:56 #
+#######################
+#######################
+# 10/27/2020 23:03:40 #
+#######################
+Command: 
+	git add ArchLinux Post Installation.sh |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git commit -m Modified ArchLinux Post Installation.sh |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+==============
+Push process:
+==============
+fatal: pathspec 'ArchLinux' did not match any files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ArchLinux Post Installation.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+#######################
+# 10/27/2020 23:04:46 #
+#######################
+#######################
+# 10/27/2020 23:04:58 #
+#######################
+Command: 
+	git add archlinux/installation/scripts/"ArchLinux Post Installation.sh" |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git commit -m Modified ArchLinux Post Installation.sh |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+==============
+Push process:
+==============
+fatal: pathspec 'archlinux/installation/scripts/"ArchLinux' did not match any files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   archlinux/installation/scripts/ArchLinux Post Installation.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+#######################
+# 10/27/2020 23:06:06 #
+#######################
+Command: 
+	git add "archlinux/installation/scripts/ArchLinux Post Installation.sh" |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git commit -m Modified ArchLinux Post Installation.sh |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitmenu-proc.log
+==============
+Push process:
+==============
+fatal: pathspec '"archlinux/installation/scripts/ArchLinux' did not match any files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   archlinux/installation/scripts/ArchLinux Post Installation.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")

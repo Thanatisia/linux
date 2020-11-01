@@ -1,0 +1,246 @@
+###################
+# Bashrc Personal #
+###################
+
+# Global variables 
+EDITOR=nano		# Main editor
+OTHER_PATHS=~/Desktop/portable/scripts/bash:~/Desktop/portable/scripts/bash/Compilers:~/Desktop/portable/scripts/bash/Workspaces:~/Desktop/portable/scripts/bash/gits:~/Desktop/portable/scripts/bash/repo-based:
+
+# Config Variables
+i3configpath=~/.config/i3/
+i3configfile=$i3configpath/config
+grubcfg=/etc/default/grub
+polybarcfg=~/.config/polybar/config
+vimrc=~/.vim/vimrc
+
+# Environment Variables
+os_indicator_Arch="/etc/arch-release"
+shell="$SHELL"
+shellname="$(basename $SHELL)"
+processor="$(uname -m)"
+PATH=$PATH:$OTHER_PATHS
+
+# Functions
+function geteditor()
+{
+	# Get the global variables
+	echo "$EDITOR"
+}
+
+# Get current distro
+function getdistro()
+{
+	distroname=""
+	# grep will check for keyword - being "arch", "debian" - the distro name
+	# any returns means it exists
+	isarch="$(ls -l /etc | grep arch)"
+	isdebian="$(ls -l /etc | grep debian)"
+	if [ "$isarch" ]; then
+		distroname="ArchLinux"
+	elif [ "$isdebian" ]; then
+		distroname="Debian"
+	else
+		distroname="Unknown"
+	fi
+	echo $distroname
+}
+
+function getcwd()
+{
+	# Get current working directory
+	ls
+}
+
+# Edit using the current $EDITOR
+function edit()
+{
+	# Edit files using the current editor
+	# Saves "Last Read"
+	if [ ! -z "$1" ]; then
+		# if there are files
+		filename="$1"
+	fi
+
+	# Edit via the current set $EDITOR
+	echo "Editor   : $(geteditor)"
+	$EDITOR $filename
+	echo "Last Read File Name: $filename"
+}
+
+# Designing the terminal
+# usage: "$(design_terminal)"
+function design_terminal()
+{
+	# Terminal Design
+	termdesign[0]="\n\u@\h\n"
+	termdesign[1]="[Current Working Directory: \w]"
+	termdesign[2]="\n "
+	termdesign[3]="[Path: \w]\n> "
+
+	# Use pywal to generate terminal colour
+	# cat ~/.cache/wal/sequences &
+
+	# Terminal Text
+	# termText="\n\u@\h\n [Shell: $shellname]\n [Current Working Directory: \W]\n [Path: \w]\n> "
+	# termText="$termText[Shell: $shellname]\n "
+	# termText="$termText[Current Working Directory: \W]\n "
+	# termText="$termText[Path: \w]\n> "
+	termText="\n\u@\h\n "
+	termText+="[Shell: $shellname]\n"
+	termText+=" "
+	termText+="[Path: \w]\n"
+	termText+=" "
+	termText+="[Current Working Directory: \W]\n"
+	termText+="> "
+	PS1=$termText
+}
+
+# commands to run when shell starts
+# usage: "$(shellstart)"
+function shellstart()
+{
+	# Start the shell
+	echo "Linux Distro: $distroname"
+	echo "Processor   : $processor"
+	echo "Shell       : $shellname"
+	neofetch
+}
+
+function setgif()
+{
+	# Set gif as wallpaper using xwinwrap
+	# -g : Specify geometry (w=width, h=height, x=x-coordinates, y=y-coordinates
+	#	- i.e. -g 640x480+100+100 = (widthxheight + x + y)
+	# -ni : Ignore Input
+	# -s : Sticky
+	# -nf : No Focus
+	# -b : Below
+	# -un: Undecorated
+	# -argb : RGB
+	# -sh : Shape of window (default: rectangle; choose between rectangle, circle or triangle)
+	# fs : Full Screen
+	# gifview : Used to view gifs
+	# -w : No warnings
+	if [ ! -z "$1" ]; then
+		GIFPATH="$1"
+		if [ ! -z "$2" ]; then
+			SCALE="$2"
+		else
+			SCALE="1920x1080"
+		fi
+	else
+		GIFPATH=~/globals/background/gif/wallpaper.gif
+	fi
+	xwinwrap_options=-g $SCALE -ni -s -nf -b -un -argb -sh fs
+	gifview_options=-w WID $GIFPATH -a
+	xwinwrap $xwinwrap_options -- gifview $gifview_options
+}
+
+function count_files()
+{
+	# count files in directory
+	if [ ! -z "$1" ]; then
+		dirpath=$1
+	else
+		dirpath=~
+	fi
+	num_of_files=$(ls $path | wc -l)
+	echo "Target Directory: $dirpath"
+	echo "Total Files: $num_of_files"
+}
+
+# Variables
+distroname="$(getdistro)"
+
+# Aliases
+## Path and Directories
+alias cd..="cd .."
+alias ..="cd .."
+alias 2.="cd ../.."
+alias 3.="cd ../../.."
+alias 4.="cd ../../../.."
+alias 5.="cd ../../../../.."
+alias rmfolder="rmdir"
+alias rename="mv"		# usage: rename <old-folder> <new-folder>
+
+## Networkig
+alias connest="ping -c 5"
+
+## Files
+# alias edit="$EDITOR"
+# alias edit-bashrc="$EDITOR ~/.bashrc"
+# alias edit-bashrc-personal="$EDITOR ~/.bashrc-personal"
+# alias edit-shellrc="$EDITOR ~/."$shellname"rc"
+# alias edit-shellrc-personal="$EDITOR ~/."$shellname"rc-personal"
+alias edit-bashrc="edit ~/.bashrc"
+alias edit-bashrc-personal="edit ~/.bashrc-personal"
+alias edit-shellrc="edit ~/."$shellname"rc"
+alias edit-shellrc-personal="edit ~/."$shellname"rc-personal"
+alias rmfile="rm"
+alias rmfile-force="rm -rf"
+alias count-files="count_files"
+
+# Zip and Tarring
+alias tarzip="tar -cvf"
+alias untar="tar -xvf"
+alias ungz="gunzip"
+
+## System - Memory
+alias mem="free -h"
+alias part="sudo fdisk -l"
+alias partsum="lsblk"
+alias sudo='sudo ' # To enable custom function
+
+## Bootloader
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias edit-grub="sudo $EDITOR $grubcfg"
+
+## Shell and Terminal
+alias please="sudo"
+alias rebash="source ~/.bashrc"
+alias rebash-clrscreen="clear && source ~/.bashrc"
+alias rundistro="echo $distroname"
+alias clr="clear"
+alias sys-start="sudo systemctl start"
+alias sys-enable="sudo systemctl enable"
+alias sys-stop="sudo systemctl stop"
+alias sys-disble="sudo systemctl disable"
+
+# Ricing
+alias update-font="fc-cache -fv"
+
+## Networking
+alias start_networkmanager="sudo systemctl start NetworkManager"
+alias start_network="nmcli networking on"
+alias stop_network="nmcli networking off"
+
+## OS-reliant - Package Manager
+# Method 1 - use /etc/ arch file: 
+# if [ -f $os_indicator_arch ]; then
+if [ "$distroname"=="ArchLinux" ]; then
+	# ArchLinux
+	alias upd="sudo pacman -Su"
+	alias upg="sudo pacman -Sy"
+	alias updg="sudo pacman -Syyu"
+	alias install="sudo pacman -S"
+	alias searchpkgs="pacman -Ss"
+	alias searchpkgs-filter="pacman -Ss | grep"
+	alias getpkgs="pacman -Q"
+	alias getpkg-novers="pacman -Qq"
+	alias getlocalpkgs="pacman -Qm"
+	alias checkpkg="pacman -Q | grep"
+	alias checkpkg-novers="pacman -Qq | grep"
+fi
+
+## Editor
+alias sublime="subl"
+
+## Windows (Batch)
+alias cls="clear"
+
+# Terminal Designs
+design_terminal
+
+# Start
+doge
+shellstart

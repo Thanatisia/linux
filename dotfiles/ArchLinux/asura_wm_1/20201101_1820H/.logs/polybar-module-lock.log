@@ -1,0 +1,16 @@
+/home/admin/asura/globals/i3lock/lock-blur.sh: line 54: blur_background.sh: command not found
+/home/admin/asura/globals/i3lock/lock-blur.sh: line 57: combine_images.sh: command not found
+Image file path "/tmp/lock.png" cannot be opened: No such file or directory
+Successfully converted /home/admin/asura/screenshot.png to /home/admin/asura/screenshotblur.png
+Successfully combined /home/admin/asura/screenshotblur.png with /home/admin/asura/globals/i3lock/wallpaper/png/1920x1080.png and output to /tmp/lock.png
+Blurring and converting...
+Successfully converted /home/admin/asura/screenshot.png to /home/admin/asura/screenshotblur.png
+Successfully combined /home/admin/asura/screenshotblur.png with /home/admin/asura/globals/i3lock/wallpaper/png/1920x1080.png and output to /tmp/lock.png
+Blurring and converting...
+Successfully converted /home/admin/asura/screenshot.png to /home/admin/asura/screenshotblur.png
+Successfully combined /home/admin/asura/screenshotblur.png with /home/admin/asura/globals/i3lock/wallpaper/png/1920x1080.png and output to /tmp/lock.png
+ --- 
+Blurring and converting...
+Successfully converted /home/admin/asura/screenshot.png to /home/admin/asura/screenshotblur.png
+Successfully combined /home/admin/asura/screenshotblur.png with /home/admin/asura/globals/i3lock/wallpaper/png/1920x1080.png and output to /tmp/lock.png
+ --- 

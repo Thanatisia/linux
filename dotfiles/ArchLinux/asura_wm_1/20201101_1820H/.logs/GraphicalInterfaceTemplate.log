@@ -1,0 +1,315 @@
+name 'create_gui' is not definedlocal variable 'new_Label' referenced before assignmentlocal variable 'new_Label' referenced before assignment
+local variable 'new_Label' referenced before assignment
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+name 'pack' is not defined
+ --- 
+name 'pack' is not defined
+ --- 
+name 'pack' is not defined
+ --- 
+name 'pack' is not defined
+ --- 
+name 'pack' is not defined
+ --- 
+name 'pack' is not defined
+ --- 
+'pack'
+ --- 
+'expand'
+ --- 
+'expand'
+ --- 
+'fill'
+ --- 
+name 'pos_Params' is not defined
+ --- 
+expected boolean value but got "True False"
+ --- 
+expected boolean value but got "True False"
+ --- 
+expected boolean value but got "True False"
+ --- 
+'expand'
+ --- 
+object of type 'bool' has no len()
+ --- 
+object of type 'bool' has no len()
+ --- 
+object of type 'bool' has no len()
+ --- 
+'bool' object is not iterable
+ --- 
+'bool' object has no attribute 'items'
+ --- 
+'bool' object has no attribute 'items'
+ --- 
+'bool' object has no attribute 'items'
+ --- 
+object of type 'bool' has no len()
+ --- 
+object of type 'bool' has no len()
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+unknown option "-Label"
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+unknown option "-Label"
+ --- 
+'NoneType' object has no attribute 'pack'
+ --- 
+unknown option "-Label"
+ --- 
+'anchor'
+ --- 
+unknown option "-Label"
+ --- 
+'anchor'
+ --- 
+'text'
+ --- 
+'text'
+ --- 
+unknown option "-expand"
+ --- 
+unknown option "-expand"
+ --- 
+unknown option "-expand"
+ --- 
+module 'pygui' has no attribute 'create_widget_Button'
+ --- 
+name 'close' is not defined
+ --- 
+'NoneType' object has no attribute 'mainloop'
+ --- 
+'NoneType' object has no attribute 'mainloop'
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+name 'res' is not defined
+ --- 
+too many values to unpack (expected 2)
+ --- 
+name 'guiProp' is not defined
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+too many values to unpack (expected 2)
+ --- 
+name 'prepare_gui' is not defined
+ --- 
+name 'res' is not defined
+ --- 
+name 'res' is not defined
+ --- 
+name 'res' is not defined
+ --- 
+name 'res' is not defined
+ --- 
+name 'res' is not defined
+ --- 
+local variable 'tmp_cursor' referenced before assignment
+ --- 
+local variable 'tmp_cursor' referenced before assignment
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+'NoneType' object has no attribute 'execute'
+ --- 
+near "NO": syntax error
+ --- 
+near "NO": syntax error
+ --- 
+near "AUTOINCREMENT": syntax error
+ --- 
+near ")": syntax error
+ --- 
+register() missing 1 required positional argument: 'password'
+ --- 
+table users already exists
+ --- 
+near "IF": syntax error
+ --- 
+near "IF": syntax error
+ --- 
+near "EXISTS": syntax error
+ --- 
+near "EXIST": syntax error
+ --- 
+name 'password_hash' is not defined
+ --- 
+name 'process_Register' is not defined
+ --- 
+'int' object is not subscriptable
+ --- 
+name 'callback_sqlite_test_loginRegister' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+name 'pysqlite' is not defined
+ --- 
+near "*": syntax error
+ --- 
+name 'pysqlite_security' is not defined
+ --- 
+no such column: Asura
+ --- 
+no such column: Asura
+ --- 
+no such column: Asura
+ --- 
+no such column: Asura
+ --- 
+no such column: Asura
+ --- 
+table users has no column named PASSOWRD
+ --- 
+no such column: Asura
+ --- 
+no such column: Asura
+ --- 
+name 'register' is not defined
+ --- 
+register() missing 1 required positional argument: 'password'
+ --- 
+register() missing 1 required positional argument: 'password'
+ --- 
+register() missing 1 required positional argument: 'password'
+ --- 
+'Personal' object has no attribute 'return_codes'
+ --- 
+module 'pysqlite' has no attribute 'select_values'
+ --- 
+module 'pysqlite' has no attribute 'connect_db'
+ --- 
+module 'pysqlite' has no attribute 'connect_db'
+ --- 
+module 'pysqlite' has no attribute 'connect_db'
+ --- 
+module 'pysqlite' has no attribute 'connect_db'
+ --- 
+expected str, bytes or os.PathLike object, not pysqlite
+ --- 
+set_sqlite_file() missing 1 required positional argument: 'sqlite_file'
+ --- 
+name 'pysec' is not defined
+ --- 
+name 'hashlib' is not defined
+ --- 
+object of type 'int' has no len()
+ --- 
+name 'username' is not defined
+ --- 
+name 'c' is not defined
+ --- 
+name 'SELECT_QUERY' is not defined
+ --- 
+'NoneType' object has no attribute 'cursor'
+ --- 
+'NoneType' object has no attribute 'cursor'
+ --- 
+'NoneType' object has no attribute 'cursor'
+ --- 
+no such column: None
+ --- 
+no such column: None
+ --- 
+no such column: None
+ --- 
+no such column: None
+ --- 
+no such column: None
+ --- 
+name 'SELECT_QUERY' is not defined
+ --- 
+name 'callback_sqlite_connectDB' is not defined
+ --- 
+name 'pysqlite_Personal' is not defined
+ --- 
+connect_db() takes 0 positional arguments but 1 was given
+ --- 
+name 'btn_logout' is not defined
+ --- 
+name 'widgets' is not defined
+ --- 
+name 'btn_connect_db' is not defined
+ --- 
+'tutorial-1'
+ --- 
+'tutorial-1'
+ --- 

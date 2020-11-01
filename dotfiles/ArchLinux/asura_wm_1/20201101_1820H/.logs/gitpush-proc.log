@@ -1,0 +1,80 @@
+#######################
+# 10/27/2020 23:12:42 #
+#######################
+Command: 
+	git add archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git commit -m Modified archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git push origin =master |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+==============
+Push process:
+==============
+[master a03cd4f] Modified archlinux/README.md
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+error: src refspec =master does not match any
+error: failed to push some refs to 'https://github.com/Thanatisia/linux.git'
+#######################
+# 10/27/2020 23:13:44 #
+#######################
+Command: 
+	git add archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git commit -m Modified archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+==============
+Push process:
+==============
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-upload.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+To https://github.com/Thanatisia/linux.git
+   c10d178..a03cd4f  master -> master
+#######################
+# 10/27/2020 23:20:45 #
+#######################
+Command: 
+	git add archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git commit -m Modified archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+==============
+Push process:
+==============
+[master 641a2ae] Modified archlinux/README.md
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+To https://github.com/Thanatisia/linux.git
+   a03cd4f..641a2ae  master -> master
+#######################
+# 10/27/2020 23:32:57 #
+#######################
+Command: 
+	git add archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git commit -m Modified ArchLinux README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+==============
+Push process:
+==============
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-mass-upload.sh
+	git-rm-files.sh
+	git-rm-folder.sh
+	git-upload-2.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+Everything up-to-date
+#######################
+# 10/27/2020 23:33:31 #
+#######################
+Command: 
+	git add archlinux/README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git commit -m Modified ArchLinux README.md |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+	git push origin master |& tee -a /home/admin/asura/.logs//gitpush-proc.log
+==============
+Push process:
+==============
+[master b3c5c88] Modified ArchLinux README.md
+ 1 file changed, 1 insertion(+)
+To https://github.com/Thanatisia/linux.git
+   641a2ae..b3c5c88  master -> master

@@ -1,0 +1,844 @@
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-mass-upload.sh
+	git-rm-files.sh
+	git-rm-folder.sh
+	git-structure.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Everything up-to-date
+Target Files: [archlinux/*]
+Adding Files to local repository
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-mass-upload.sh
+	git-rm-files.sh
+	git-rm-folder.sh
+	git-structure.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Pushing files to origin
+Everything up-to-date
+  --- 
+Target Files: [archlinux/*]
+Adding Files to local repository
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-mass-upload.sh
+	git-rm-files.sh
+	git-rm-folder.sh
+	git-structure.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Pushing files to origin
+Everything up-to-date
+  --- 
+Target Files: [README.md]
+Adding Files to local repository
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   archlinux/README.md
+	deleted:    archlinux/installation/scripts/ArchLinux Minimal Install - Self-partition v0.1.sh
+	deleted:    archlinux/installation/scripts/ArchLinux Minimal Install - Self-partition v0.2.sh
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	archlinux/installation/scripts/ArchLinux Minimal Install - Self-partition.sh
+	archlinux/installation/scripts/archive/
+	git-mass-upload.sh
+	git-rm-files.sh
+	git-rm-folder.sh
+	git-structure.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Pushing files to origin
+Everything up-to-date
+  --- 
+Target Files: [archlinux/*]
+Adding Files to local repository
+Committing Files
+[master c96260b] "Updated README.md with new files as of 2020-10-30 20:19H"
+ 3 files changed, 9 insertions(+), 1 deletion(-)
+ rename archlinux/installation/scripts/{ArchLinux Minimal Install - Self-partition v0.2.sh => ArchLinux Minimal Install - Self-partition.sh} (100%)
+ rename archlinux/installation/scripts/{ArchLinux Minimal Install - Self-partition v0.1.sh => archive/ArchLinux Minimal Install - Self-partition-20201030-2000H.sh} (100%)
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   67c3a03..c96260b  master -> master
+  --- 
+Git Local Repository: linux
+
+Target Files: [linux]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+error: src refspec Updated does not match any
+error: src refspec README.md does not match any
+error: src refspec with does not match any
+error: src refspec new does not match any
+error: src refspec files does not match any
+error: src refspec as does not match any
+error: src refspec of does not match any
+error: src refspec 2020-10-30 does not match any
+error: src refspec 20 does not match any
+error: failed to push some refs to 'https://github.com/Thanatisia/linux.git'
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [linux]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+error: src refspec Updated does not match any
+error: src refspec README.md does not match any
+error: src refspec with does not match any
+error: src refspec new does not match any
+error: src refspec files does not match any
+error: src refspec as does not match any
+error: src refspec of does not match any
+error: src refspec 2020-10-30 does not match any
+error: src refspec 20 does not match any
+error: failed to push some refs to 'https://github.com/Thanatisia/linux.git'
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/Compilers/cs_compile.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/Compilers/cs_compile.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/Compilers/cs_compile.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/Compilers/cs_compile.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+
+Pushing files to origin
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	scripts/Compilers/cs_compile.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+
+Committing Files
+[master 9830b57] "Added new compilers [cs_compile.sh] for C# compilation via mcs and mono"
+ 1 file changed, 98 insertions(+)
+ create mode 100755 scripts/Compilers/cs_compile.sh
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   c96260b..9830b57  master -> master
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pushing files to origin
+Everything up-to-date
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 644f934] "Modified [cs_compile.sh] for C# compilation via mcs and mono and added comments"
+ 1 file changed, 1 insertion(+)
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   9830b57..644f934  master -> master
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 6eca5c4] "Modified [cs_compile.sh] for C# compilation via mcs and mono and added comments"
+ 1 file changed, 27 insertions(+)
+Successfully committed files with message "Modified [cs_compile.sh] for C# compilation via mcs and mono and added comments"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   644f934..6eca5c4  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 3dbee3e] "2020-10-31 07:47H : Archived cpp_compile.sh modified in 20200810 and edited to fit a new template"
+ 2 files changed, 172 insertions(+), 103 deletions(-)
+ copy scripts/Compilers/{cpp_compile.sh => archive/cpp_compile-20200810.sh} (100%)
+ rewrite scripts/Compilers/cpp_compile.sh (98%)
+Successfully committed files with message "2020-10-31 07:47H : Archived cpp_compile.sh modified in 20200810 and edited to fit a new template"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   6eca5c4..3dbee3e  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master f246369] "2020-10-31 07:52H : Edited 'cpp_compile.s'"
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Successfully committed files with message "2020-10-31 07:52H : Edited 'cpp_compile.s'"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   3dbee3e..f246369  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 92896da] "2020-10-31 07:57H : Edited 'cpp_compile.s' with parameter '--run'"
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Successfully committed files with message "2020-10-31 07:57H : Edited 'cpp_compile.s' with parameter '--run'"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   f246369..92896da  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Successfully committed files with message "2020-10-31 07:57H : Edited 'cpp_compile.s' with parameter '--run'"
+
+Pushing files to origin
+Everything up-to-date
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 54605d8] "2020-10-31 09:30H : Created script 'setup_samba.sh' to automatically create smaba"
+ 1 file changed, 196 insertions(+)
+ create mode 100755 scripts/setup_samba.sh
+Successfully committed files with message "2020-10-31 09:30H : Created script 'setup_samba.sh' to automatically create smaba"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   92896da..54605d8  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux/*
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git
+
+Target Files: [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.]
+
+Adding Files to local repository
+Successfully added files [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.] to local repository
+
+Committing Files
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully committed files with message "master"
+
+Pushing files to origin
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux/*
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git
+
+Target Files: [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.]
+
+Adding Files to local repository
+Successfully added files [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.] to local repository
+
+Committing Files
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully committed files with message "master"
+
+Pushing files to origin
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux/archlinux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux/archlinux
+
+Target Files: [linux/dotfiles]
+
+Adding Files to local repository
+Successfully added files [linux/dotfiles] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   README.md
+	deleted:    installation/scripts/ArchLinux Minimal Install - Self-partition.sh
+	modified:   installation/scripts/ArchLinux Minimal Install.sh
+	modified:   ../dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   ../dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   ../dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+	modified:   ../scripts/shlib.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	installation/scripts/ArchLinux_Minimal_Install-Manual.sh
+	installation/scripts/ArchLinux_Minimal_Install-Manual_Part1.sh
+	installation/scripts/ArchLinux_Minimal_Install-Manual_Part2.sh
+	installation/scripts/archive/ArchLinux Minimal Install - Self-partition-20201101-1112H.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Successfully committed files with message "linux/README.md"
+
+Pushing files to origin
+error: src refspec linux/scripts does not match any
+error: failed to push some refs to 'https://github.com/Thanatisia/linux.git'
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux/*
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git
+
+Target Files: [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.]
+
+Adding Files to local repository
+Successfully added files [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.] to local repository
+
+Committing Files
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully committed files with message "master"
+
+Pushing files to origin
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux/*
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git
+
+Target Files: [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.]
+
+Adding Files to local repository
+Successfully added files [2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively.] to local repository
+
+Committing Files
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully committed files with message "master"
+
+Pushing files to origin
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [linux/*]
+
+Adding Files to local repository
+Successfully added files [linux/*] to local repository
+
+Committing Files
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   archlinux/README.md
+	deleted:    archlinux/installation/scripts/ArchLinux Minimal Install - Self-partition.sh
+	modified:   archlinux/installation/scripts/ArchLinux Minimal Install.sh
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/AutoComplPop (untracked content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets (modified content)
+	modified:   dotfiles/ArchLinux/asura_wm_1/20201028_2347H/.vim/plugged/vim-snippets-personal (modified content, untracked content)
+	modified:   scripts/shlib.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual.sh
+	archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part1.sh
+	archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part2.sh
+	archlinux/installation/scripts/archive/ArchLinux Minimal Install - Self-partition-20201101-1112H.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Successfully committed files with message "2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively."
+
+Pushing files to origin
+Everything up-to-date
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 5aaf8f5] "2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively."
+ 1 file changed, 33 insertions(+)
+Successfully committed files with message "2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively."
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   54605d8..5aaf8f5  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [archlinux/*]
+
+Adding Files to local repository
+Successfully added files [archlinux/*] to local repository
+
+Committing Files
+[master 7853738] "2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively."
+ 6 files changed, 874 insertions(+), 7 deletions(-)
+ create mode 100644 archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual.sh
+ create mode 100644 archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part1.sh
+ create mode 100644 archlinux/installation/scripts/ArchLinux_Minimal_Install-Manual_Part2.sh
+ rename archlinux/installation/scripts/{ArchLinux Minimal Install - Self-partition.sh => archive/ArchLinux Minimal Install - Self-partition-20201101-1112H.sh} (100%)
+Successfully committed files with message "2020-11-01 18:00H, Updated 'shlib.sh' in 'linux/scripts' {Added 2 functions under Regular Expressions}; Modified 'ArchLinux_Minimal_Install-Manual.sh'; Split 'ArchLinux_Minimal_Install-Manual.sh' into2 parts - Part 1 and Part 2 shell files which are to be executed in the 'install iso root' and the 'new install's root' respectively."
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   5aaf8f5..7853738  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
+Git Local Repository: linux
+
+Current Directory: /home/admin/asura/Desktop/portable/sharefolder/git/linux
+
+Target Files: [scripts/*]
+
+Adding Files to local repository
+Successfully added files [scripts/*] to local repository
+
+Committing Files
+[master 1833b7e] "2020-11-01 18:19H, Added file 'Bash-Template_2020-11-01_1812H.sh'"
+ 1 file changed, 70 insertions(+)
+ create mode 100644 scripts/Templates/Bash-Template_2020-11-01_1812H.sh
+Successfully committed files with message "2020-11-01 18:19H, Added file 'Bash-Template_2020-11-01_1812H.sh'"
+
+Pushing files to origin
+To https://github.com/Thanatisia/linux.git
+   7853738..1833b7e  master -> master
+Successfully pushed local repository to remote (origin) repository
+
+  --- 
