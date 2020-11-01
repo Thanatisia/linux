@@ -1,7 +1,10 @@
 function rofi_dmenu()
 {
-	res="$(echo -e "$str" | rofi -dmenu)"
+	str="$1"
+	if [ ! -z "$str" ]; then
+		res="$(echo -e "$str" | rofi -dmenu)"
+	fi
 	echo "$res"
 }
 
-echo "$(rofi_dmenu)"
+echo "$(rofi_dmenu "HelloWorld\nHello World")"
