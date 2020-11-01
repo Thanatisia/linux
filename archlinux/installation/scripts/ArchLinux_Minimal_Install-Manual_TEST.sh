@@ -309,26 +309,36 @@ echo "Partitioning completed."
 #mount $disk_part3 /mnt/home
 read -p "Partition to mount /mnt [/dev/sdXY (/dev/sdX2)]: " mntpart # i.e. /dev/sdX2
 mount $mntpart /mnt # Start with mount directory
-for ((count=0; count<=$number_of_partitions-1; count++)); do
-	# 
-	# Examples:
-	# =========================
-	# mntpart: /dev/sdX1
-	# dir_to_make: /mnt/boot
-	# mkdir -p /mnt/boot
-	# mount /dev/sdX1 /mnt/boot
-	# =========================
-	# mntpart: /dev/sdX3
-	# dir_to_make: /mnt/home
-	# mkdir -p /mnt/home
-	# mount /dev/sdX3 /mnt/home
-	# =========================
-	# 
-	read -p "Target partition to mount [/dev/sdXY [(/dev/sdX1) | (/dev/sdX3)]]: " otherpart
-	read -p "Make Directory: " dir_to_make
-	mkir -p $dir_to_make
-	mount $otherpart $dir_to_make
-done
+
+# To be debugged [1]
+# for ((count=0; count<=$number_of_partitions-1; count++)); do
+# 	# 
+# 	# Examples:
+# 	# =========================
+# 	# mntpart: /dev/sdX1
+# 	# dir_to_make: /mnt/boot
+# 	# mkdir -p /mnt/boot
+# 	# mount /dev/sdX1 /mnt/boot
+# 	# =========================
+# 	# mntpart: /dev/sdX3
+# 	# dir_to_make: /mnt/home
+# 	# mkdir -p /mnt/home
+# 	# mount /dev/sdX3 /mnt/home
+# 	# =========================
+# 	# 
+# 	read -p "Target partition to mount [/dev/sdXY [(/dev/sdX1) | (/dev/sdX3)]]: " otherpart
+# 	read -p "Make Directory: " dir_to_make
+# 	mkir -p $dir_to_make
+# 	mount $otherpart $dir_to_make
+# done
+# Temporary measure - manual
+mkdir -p /mnt/boot
+read -p "Partition to mount /mnt/boot [/dev/sdXY (dev/sdX1)]: " bootmntpart
+mount $bootmntpart /mnt/boot
+mkdir -p /mnt/home
+read -p "Partition to mount /mnt/home [/dev/sdXY (dev/sdX3)]: " homemntpart
+mount $homemntpart /mnt/home
+
 # Pacstrap libraries
 pacstrap /mnt $pacstrap_pkgs  								# NOTES: These are the minimal for installations; Strap libraries to /mnt (ArchLinux Kernel etc.)
 # Generate an fstab file
@@ -364,8 +374,8 @@ arch-chroot /mnt pacman -S os-prober
 case "$bootloader" in 
 	"Grub")
 		arch-chroot /mnt pacman -S grub
-		arch-chroot /mnt mkdir -p /boot/grub
-		arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
+		# arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
+		arch-chroot /mnt bash -c 'cd grub; grub-mkconfig -o grub.config'
 		arch-chroot /mnt grub-install --target=i386-pc --debug $disk_part
 		;;
 	*) arch-chroot /mnt echo "Invalid Bootloader, apologies - you will need to install the bootloader manually"
