@@ -227,7 +227,7 @@ timedatectl set-ntp true
 echo "Partitioning..."
 sudo fdisk -l 
 lsblk
-part_Options=("Reformat-New-Label" "Create-Boot-Partition" "Enable-Bootable" "Create-New-Partition" "Quit")
+part_Options=("View-All-Partitions" "Reformat-New-Label" "Create-Boot-Partition" "Enable-Bootable" "Create-New-Partition" "Quit")
 # Get Disk Drive
 read -p "Disk Drive (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
 bootpart_size=""
@@ -241,6 +241,11 @@ while [ ! "$opt" == "Quit" ]; do
 	read -p "Option: " opt
 
 	case "$opt" in 
+		"View-All-Partitions")
+			sudo fdisk -l
+			echo ""
+			lsblk
+			;;
 		"Reformat-New-Label") 
 			read -p "Disk Label [msdos (for MBR)|gpt (for UEFI)]: " disk_label
 			parted $disk_part mklabel $disk_label
