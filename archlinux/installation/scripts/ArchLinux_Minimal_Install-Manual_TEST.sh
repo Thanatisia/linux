@@ -363,6 +363,7 @@ arch-chroot /mnt echo "LANG=$locale_code" >> /etc/locale.conf
 arch-chroot /mnt echo "KEYMAP=$key_layout" >> /etc/vconsole.conf
 if [ "$enable_multilib" == "Y" ]; then
 	arch-chroot /mnt sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+	arch-chroot /mnt pacman -Sy
 fi
 arch-chroot /mnt echo "$hostname" >> /etc/hostname 
 # Create Hostname
@@ -374,13 +375,14 @@ arch-chroot /mnt mkinitcpio -P linux	# Initialize and create new ram file system
 arch-chroot /mnt mkinitcpio -P linux-lts # Initialize and create new ram file system
 arch-chroot /mnt passwd 			# Set Root Password
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/s/^#//g' /etc/sudoers 					# Allow new users to run sudo; PLEASE DO NOT USE SCRIPTS TO EDIT SUDOERS, use [EDITOR=<your editor> visudo]
-arch-chroot /mnt pacman -S os-prober
+arch-chroot /mnt bash -c 'echo "Y" | pacman -S os-prober'
 # Install Bootloader
 case "$bootloader" in 
 	"Grub")
-		arch-chroot /mnt pacman -S grub
+		arch-chroot /mnt bash -c 'echo "Y" | pacman -S grub'
 		# arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
-		arch-chroot /mnt bash -c 'cd grub; grub-mkconfig -o grub.config'
+		arch-chroot /mnt bash -c 'cd /boot; mkdir -p grub'
+		arch-chroot /mnt bash -c 'cd /boot/grub; grub-mkconfig -o grub.cfg'
 		arch-chroot /mnt grub-install --target=i386-pc --debug $disk_part
 		;;
 	*) arch-chroot /mnt echo "Invalid Bootloader, apologies - you will need to install the bootloader manually"
