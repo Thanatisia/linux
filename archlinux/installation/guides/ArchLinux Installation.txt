@@ -543,7 +543,8 @@ DWM (Dynamic Window Manager) by Suckless
 	[Sway]
 	sudo pacman -S swaywm
 	[dwm]
-	git clone [dwm url]
+	# git clone [dwm url]
+	git clone git://git.suckless.org/dwm
 	
 # Desktop Environment
 """ Types of Desktop Environments:

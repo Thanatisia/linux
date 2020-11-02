@@ -2,13 +2,6 @@
 # [Post Installation]
 # -------------------
 
-# [Home Directory]
-# Dotfiles
-DOTFLDRS=(~/.archive ~/.logs)
-for fldrs in ${DOTFLDRS[@]}; do
-	mkdir -p $fldrs
-done
-
 # [User Control]
 # Create Admin user
 read -p "Username: " uname
@@ -28,9 +21,29 @@ else
 	# Error
 fi
 
+# [Home Directory]
+# Dotfiles/Dotfolders
+DOTFLDRS=(~/.archive ~/.logs ~/.configs ~/.local ~/.vim)
+DEFAULT_FLDRS=(~/configs ~/Desktop ~/Downloads ~/globals)
+DOTFILES=(~/.bashrc-personal ~/.Xresources)
+for fldrs in ${DOTFLDRS[@]}; do
+	mkdir -p $fldrs
+done
+for deffldrs in ${DEFAULT_FLDRS[@]}; do
+	mkdir -p $deffldrs
+done
+for files in ${DOTFILES[@]}; do
+	touch $files
+done
+
+# Xresources
+## Generate Xresources with a default template
+xrdb -query | tee -a ~/.Xresources
+
 # [Networking]
 # Install Networking Packages
-sudo pacman -S dhcpcd wireless_tools wpa_supplicant wpa_actiond dialog netctl
+# sudo pacman -S dhcpcd wireless_tools wpa_supplicant wpa_actiond dialog netctl
+sudo pacman -S dhcpcd wireless_tools wpa_supplicant dialog netctl
 
 # Setup Network - Wired 
 sudo NetworkManager start
@@ -39,7 +52,9 @@ sudo NetworkManager start
 nmcli dev wifi
 read -p "Enter your AP name: " AP_name
 read -p "Enter your AP pass: " AP_pass
-nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
+if [ ! -z "$AP_name" ] && [ ! -z "$AP_pass" ]; then
+	nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
+done
 
 # [Important Utilities]
 # Install File Manager
@@ -51,6 +66,13 @@ read -p "Web Browser: " browser
 # Install Text Editor
 read -p "Text Editor: " texteditor
 sudo pacman -S $filemgr $term $browser $texteditor
+
+# Validate git
+if [ ! "$(pacman -Qq | grep "git")" ]; then
+	# Install git
+	echo "Package 'git' is not installed - installing git..."
+	pacman -S git
+fi
 
 # [Setup AUR]
 # Install AUR Helper
@@ -114,7 +136,8 @@ case "$opt" in
 				;;
 			"Sway") sudo pacman -S swaywm
 				;;
-			"dwm") git clone 
+			"dwm") 
+				git clone git://git.suckless.org/dwm
 				;;
 		esac
 		;;
