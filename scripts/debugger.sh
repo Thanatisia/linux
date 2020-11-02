@@ -44,5 +44,8 @@ function main()
 
 
 # echo "$(main)"
-options=(help "Option1")
-echo $(doptions ${options[@]})
+# options=(help "Option1")
+# echo $(doptions ${options[@]})
+
+# package_control()
+package_install
