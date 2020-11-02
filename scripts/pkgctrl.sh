@@ -2,11 +2,12 @@
 # Package Control Management
 #
 
+pkgmgr="pacman"
+packages=()
+
 function package_install()
 {
 	options=("(A)dd Package" "(R)emove Package" "(S)earch Package" "(L)ist All Packages" "(Q)uit")
-	packages=()
-
 	# List all options
 	echo "Options: "
 	for option in "${options[@]}"; do
@@ -67,7 +68,60 @@ function package_install()
 	done
 
 	# For now - install
-	sudo pacman -S $pkgstring | tee -a ~/.logs/package_install.log
+	if [ ! -z "$pkgstring" ]; then
+		sudo pacman -S $pkgstring | tee -a ~/.logs/package_install.log
+	else
+		echo "No packages to install."
+	fi
 }
 
-package_install
+function package_menu()
+{
+	pkgmenu_options=("(I)nstall" "(H)elp" "(Q)uit")
+	pkgmenu_Help=("(I)nstall : Use this to install via your package manager - currently $pkgmgr" "(H)elp : This message" "(Q)uit : To quit this program")
+	# List all options
+	echo "Options: "
+	for option in "${pkgmenu_options[@]}"; do
+		echo "	$option"
+	done
+
+	# Get user input
+	read -p "Option: " opt
+	while [ ! "$opt" == "Quit" ] && [ ! "$opt" == "Q" ]; do
+		case "$opt" in 
+			"I" | "Install") 
+				echo "Install Packages"
+				echo ""
+				package_install
+				opt=""
+				;;
+			"H" | "Help") 
+				echo "Help"
+				for man in "${pkgmenu_Help[@]}"; do
+					echo "	$man"
+				done
+				;;
+			"Q" | "Quit") 
+				echo "Quit"
+				;;
+			*) echo "Invalid option"
+				;;
+		esac
+
+		# List all options
+		echo ""
+		echo "Options: "
+		for option in "${pkgmenu_options[@]}"; do
+			echo "	$option"
+		done
+
+		# Get option
+		read -p "Option: " opt
+	done
+	pkgstring=""
+	for pkg in ${packages[@]}; do
+		pkgstring+="$pkg "
+	done
+}
+
+package_menu
