@@ -227,7 +227,7 @@ timedatectl set-ntp true
 echo "Partitioning..."
 sudo fdisk -l 
 lsblk
-part_Options=("View-All-Partitions" "Reformat-New-Label" "Create-Boot-Partition" "Enable-Bootable" "Create-New-Partition" "Quit")
+part_Options=("(1) View-All-Partitions" "(2) Reformat-New-Label" "(3) Create-Boot-Partition" "(4) Enable-Bootable" "(5) Create-New-Partition" "(Q)uit")
 # Get Disk Drive
 read -p "Disk Drive (/dev/sda, /dev/sdb, /dev/sdc etc - no numbers behind): " disk_part
 bootpart_size=""
@@ -235,22 +235,22 @@ rootpart_size=""
 homepart_size=""
 arr_partition_Types=() # All Partition Types
 while [ ! "$opt" == "Quit" ]; do
-	for partopt in ${part_Options[@]}; do
+	for partopt in "${part_Options[@]}"; do
 		echo "	$partopt"
 	done
 	read -p "Option: " opt
 
 	case "$opt" in 
-		"View-All-Partitions")
+		"1" | "View-All-Partitions")
 			sudo fdisk -l
 			echo ""
 			lsblk
 			;;
-		"Reformat-New-Label") 
+		"2" | "Reformat-New-Label") 
 			read -p "Disk Label [msdos (for MBR)|gpt (for UEFI)]: " disk_label
 			parted $disk_part mklabel $disk_label
 			;;
-		"Create-Boot-Partition")
+		"3" | "Create-Boot-Partition")
 			# Create boot partition
 			read -p "Partition Format [Primary|Logical|Extension]: " partition_format
 			read -p "Partition Type [ext4|fat32|etc]: " partition_type
@@ -261,17 +261,20 @@ while [ ! "$opt" == "Quit" ]; do
 			bootpart_size=$bootpart_size
 			arr_partition_Types+=("$partition_type")
 			;;
-		"Enable-Bootable")
+		"4" | "Enable-Bootable")
 			read -p "Boot Partition number: " bootpart_number
 			parted $disk_part set $bootpart_number boot on
 			;;
-		"Create-New-Partition") 
+		"5" | "Create-New-Partition") 
 			read -p "Partition Format [Primary|Logical|Extension]: " partition_format
 			read -p "Partition Type [ext4|fat32|etc]: " partition_type
 			read -p "Partition Starting Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]): " part_start_size
 			read -p "Partition Ending   Size (in MiB [example: 1024MiB]/GiB [example: 1GiB]) (NOTE: put 100% to use the remainder of the space): " part_end_size
 			parted $disk_part mkpart $partition_format $partition_type $part_start_size $part_end_size
 			arr_partition_Types+=("$partition_type")
+			;;
+		"Q" | "Quit")
+			echo "Quit"
 			;;
 		*) echo "Invalid option"
 			;;
