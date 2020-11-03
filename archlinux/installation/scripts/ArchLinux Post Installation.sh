@@ -54,7 +54,7 @@ read -p "Enter your AP name: " AP_name
 read -p "Enter your AP pass: " AP_pass
 if [ ! -z "$AP_name" ] && [ ! -z "$AP_pass" ]; then
 	nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
-done
+fi
 
 # [Important Utilities]
 # Install File Manager
