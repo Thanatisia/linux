@@ -15,9 +15,9 @@ function installer()
 	#
 
 	# Defaults
-	default_ToDo=("(U)ser Control" "(H)ome Directory" "(N)etworking" "(P)ackage Management" "(A)UR" "(O)ther Package Installations" "(F)rontend setup" "(D)isplay Manager")
+	default_ToDo=("(U)ser Control" "(N)etworking" "(P)ackage Management" "(O)ther Package Installations" "(H)ome Directory" "(A)UR" "(F)rontend setup" "(D)isplay Manager")
 
-	install_ToDo=("(U)ser Control" "(H)ome Directory" "(N)etworking" "(P)ackage Management" "(A)UR" "(O)ther Package Installations" "(F)rontend setup" "(D)isplay Manager")
+	install_ToDo=("(U)ser Control" "(N)etworking" "(P)ackage Management" "(O)ther Package Installations" "(H)ome Directory" "(A)UR" "(F)rontend setup" "(D)isplay Manager")
 	menu_options=("(S)tart" "(R)emove" "(D)efault" "(H)elp" "(Q)uit")
 	menu_Help=("(S)tart : Start the Post-Installation ToDo install process" "(R)emove : Remove a category from the Default Post-Installation ToDo install list" "(D)efault : Reset all options back to default" "(H)elp : This help menu" "(Q)uit : Quit the program")
 
@@ -27,14 +27,18 @@ function installer()
 	# List all ToDo
 	echo "This is the Table of Contents"
 	for todo in "${install_ToDo[@]}"; do
-		echo "$todo"
+		echo "	$todo"
 	done
+
+	echo ""
 
 	# List all options
 	echo "Options: "
 	for option in "${menu_options[@]}"; do
 		echo "	$option"
 	done
+
+	echo ""
 
 	# Get user input
 	read -p "Option: " opt
@@ -48,7 +52,7 @@ function installer()
 				echo "Start"
 				for todo in "${install_ToDo[@]}"; do
 					case "$todo" in 
-						"U") echo "User Control"
+						"U" | "(U)ser Control") echo "User Control"
 							# To refer to "ArchLinux Post Installation under [User Control]"
 							read -p "Username: " uname
 							read -p "Groups: " ugroups
@@ -69,35 +73,15 @@ function installer()
 								echo "Error creating user $uname"
 							fi
 							;;
-						"H") echo "Home Directory"
-							# To refer to "ArchLinux Post Installation under [Home Directory]"
-							# Dotfiles/Dotfolders
-							DOTFLDRS=(~/.archive ~/.logs ~/.configs ~/.local ~/.vim)
-							DEFAULT_FLDRS=(~/configs ~/Desktop ~/Downloads ~/globals)
-							DOTFILES=(~/.bashrc-personal ~/.Xresources)
-							for fldrs in ${DOTFLDRS[@]}; do
-								mkdir -p $fldrs
-							done
-							for deffldrs in ${DEFAULT_FLDRS[@]}; do
-								mkdir -p $deffldrs
-							done
-							for files in ${DOTFILES[@]}; do
-								touch $files
-							done
-
-							# Xresources
-							## Generate Xresources with a default template
-							xrdb -query | tee -a ~/.Xresources
-							;;
-						"N") echo "Networking"
+						"N" | "(N)etworking") echo "Networking"
 							# To refer to "ArchLinux Post Installation under [Networking]"
-							sudo pacman -S networkmanager dhcpcd wireless_tools wpa_suppliccant dialog netctl
+							sudo pacman -S networkmanager dhcpcd wireless_tools wpa_supplicant dialog netctl
 
 							# Setup Network - Wired
 							sudo NetworkManager start
 
 							# Sleep for a while to let the networkmanager take effect
-							sleep 3
+							sleep 5
 
 							# Setup Network - Wireless
 							nmcli dev wifi
@@ -107,7 +91,7 @@ function installer()
 								nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
 							fi
 							;;
-						"P") echo "Package Management"
+						"P" | "(P)ackage Management") echo "Package Management"
 							# To refer to "ArchLinux Post Installation under [Package Management]"
 							read -p "File Manager: " filemgr
 							read -p "Terminal Emulator: " term
@@ -115,28 +99,13 @@ function installer()
 							read -p "Text Editor: " texteditor
 							sudo pacman -S $filemgr $term $browser $texteditor
 							;;
-						"A") echo "AUR"
-							# To refer to "ArchLinux Post Installation under [AUR]"
-							# Pre-Requisites: git
-							if [ ! "$(pacman -Qq | grep "git")" ]; then
-								# Install git
-								echo "Package 'git' is not installed - installing git..."
-								pacman -S git
-							fi
-
-							# Setup AUR
-							git clone https://aur.archlinux.org/yay-git.git
-							cd yay-git
-							makepkg -si
-							yay
-							;;
-						"O") echo "Other Package Installations"
+						"O" | "(O)ther Package Installations") echo "Other Package Installations"
 							# To refer to "ArchLinux Post Installation under [Additional Package Installations]"
 							echo "Installing microcodes..."
 							sudo pacman -S intel-ucode amd-ucode
 							echo ""
 							echo "Installing graphical utilities..."
-							sudo pacman -S xorg-server xorg-xinit xorg-server-utils
+							sudo pacman -S xorg xorg-server xorg-xinit xorg-server-utils
 							echo ""
 							echo "Installing audio controls..."
 							sudo pacman -S pulseaudio pulseaudio-alsa
@@ -157,7 +126,42 @@ function installer()
 							sudo pacman -S xorg-twm xorg-xclock xterm
 							echo ""
 							;;
-						"F") # WM/DE 
+						"H" | "(H)ome Directory") echo "Home Directory"
+							# To refer to "ArchLinux Post Installation under [Home Directory]"
+							# Dotfiles/Dotfolders
+							DOTFLDRS=(~/.archive ~/.logs ~/.configs ~/.local ~/.vim)
+							DEFAULT_FLDRS=(~/configs ~/Desktop ~/Downloads ~/globals)
+							DOTFILES=(~/.bashrc-personal ~/.Xresources)
+							for fldrs in ${DOTFLDRS[@]}; do
+								mkdir -p $fldrs
+							done
+							for deffldrs in ${DEFAULT_FLDRS[@]}; do
+								mkdir -p $deffldrs
+							done
+							for files in ${DOTFILES[@]}; do
+								touch $files
+							done
+
+							# Xresources
+							## Generate Xresources with a default template
+							xrdb -query | tee -a ~/.Xresources
+							;;
+						"A" | "(A)UR") echo "AUR"
+							# To refer to "ArchLinux Post Installation under [AUR]"
+							# Pre-Requisites: git
+							if [ ! "$(pacman -Qq | grep "git")" ]; then
+								# Install git
+								echo "Package 'git' is not installed - installing git..."
+								pacman -S git
+							fi
+
+							# Setup AUR
+							git clone https://aur.archlinux.org/yay-git.git
+							cd yay-git
+							makepkg -si
+							yay
+							;;
+						"F" | "(F)rontend setup") # WM/DE 
 							# To refer to "ArchLinux Post Installation under [WM/DE setup]"
 							echo "Frontend setup"
 							read -p "(DE) Desktop Environment | (WM) Window Manager?: " opt
@@ -219,7 +223,7 @@ function installer()
 									;;
 							esac
 							;; 
-						"D") echo "Display/Login Options"
+						"D" | "Display Manager") echo "Display/Login Options"
 							# To refer to "ArchLinux Post Installation under [Display Manager]"
 							read -p "(DM) Display Manager | (S) Static exec ?: " display_opt
 							selected_ = ""
@@ -268,6 +272,7 @@ function installer()
 							done
 							;;
 						*) echo "Probably a W.I.P feature? Moving to next todo"
+							;;
 					esac
 					echo ""
 				done
@@ -276,14 +281,14 @@ function installer()
 				echo "Removing option..."
 				read -p "Which menu option would you like to remove?: " remove_opt
 				case "$remove_opt" in
-					"U") remove_opt="User Control";;
-					"H") remove_opt="Home Directory";;
-					"N") remove_opt="Networking";;
-					"P") remove_opt="Package Management";;
-					"A") remove_opt="AUR";;
-					"O") remove_opt="Other Package Installations";;
-					"F") remove_opt="Frontend setup";; # WM/DE
-					"D") remove_opt="Display Manager";;
+					"U") remove_opt="(U)ser Control";;
+					"H") remove_opt="(H)ome Directory";;
+					"N") remove_opt="(N)etworking";;
+					"P") remove_opt="(P)ackage Management";;
+					"A") remove_opt="(A)UR";;
+					"O") remove_opt="(O)ther Package Installations";;
+					"F") remove_opt="(F)rontend setup";; # WM/DE
+					"D") remove_opt="(D)isplay Manager";;
 					*) echo "Invalid option";;
 				esac
 				install_ToDo=("${install_ToDo[@]/$remove_opt}")
@@ -321,3 +326,16 @@ function installer()
 		read -p "Option: " opt
 	done
 }
+
+read -p "Launch installer? [(Y)es | (N)o]: " launch
+while [ ! "$launch" == "N" ] || [ ! "$launch" == "No" ]; do
+	case "$launch" in
+		"Y" | "Yes") installer
+			;;
+		"N" | "No") echo "Quit"
+			;;
+		*) echo "Invalid option"
+			;;
+	esac
+	read -p "Launch installer? [(Y)es | (N)o]: " launch
+done
