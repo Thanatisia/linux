@@ -1,0 +1,32 @@
+; source_file.asm
+; asm : ASSEMBLY Language extension
+;
+; Author: 
+; Date: 
+;
+; --- Glossary ---
+; Label: Functions
+; ----------------
+
+; _start : How we are going to run all of the below
+
+global _start                        ;Define start 
+
+section .text:                       ;section: Defining the section/area required to run; .text: Section for Program Instructions to actually run
+
+_start:                              ;main in C
+    mov eax, 0x4                     ;Use the 'write' syscall - Move the register 'eax' to number of the syscall - in this case, 0x4 : Write
+    mov ecx, 1                       ;Use stdout as the file descriptor (fd)
+    mov ecx, message                 ;Use the message as the buffer
+    mov edx, message_length          ;and Supply the message length
+    int 0x80                         ;Invoke/Run the syscall - int : Interrupt - 0x80: Identifier for running a syscall
+
+                                     ;Exit the program
+                                     ;<action <register>, <operand parameters>
+    mov eax, 0x1                     ;Set eax to 0x1 (basically 1)
+    mov ebx, 0                       ;Return value '0' (i.e. return 0 : Success or return 1 : Error)
+    int 0x80                         ;Invoke/Run the syscall
+
+section .data:                       ;.data: Section define variables and labels to use in .text
+    message: db "Hello World!", 0xA  ;Create a variable "message", db: Define bytes a string/message, supply an argument : 0xA : Newline character
+    message_length equ $-message     ;Count the message length/size (number of characters)
