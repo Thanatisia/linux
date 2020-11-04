@@ -328,7 +328,7 @@ function installer()
 }
 
 read -p "Launch installer? [(Y)es | (N)o]: " launch
-while [ ! "$launch" == "N" ] || [ ! "$launch" == "No" ]; do
+while [ ! "$launch" == "N" ] && [ ! "$launch" == "No" ]; do
 	case "$launch" in
 		"Y" | "Yes") installer
 			;;
