@@ -66,12 +66,13 @@ function installer()
 							#--------------------------
 							# Generate useradd command
 							command="useradd"
-							command+="$add_opt -G $ugroups "
+							command+=" $add_opt -G $ugroups "
 							case "$add_opt" in 
-								"-m") command+="-d $home_dir"
+								"-m") command+=" -d $home_dir"
+									;;
 								*) ;;
 							esac
-							command+="$uname"
+							command+=" $uname"
 							echo "Command: [$command]"
 							# -------------------------
 
