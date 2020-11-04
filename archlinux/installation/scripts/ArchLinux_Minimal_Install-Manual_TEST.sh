@@ -403,6 +403,37 @@ esac
 
 echo "Installation process via script has been completed."
 
+echo ""
+
+# ------- Post Install
+todoset=("Network Management" "User Control" "Additional Package Control" "Create Home Directory")
+todoset_description=(
+	"
+	Network Management : 
+		1. Install Network packages (i.e. netctl, networkmanager)
+	User Control:
+		1. Create user/admin accounts
+	Additional Package Control:
+		1. Install other packages
+	Create Home Directory:
+		1. Create dotfolders/dotfiles/folders required in desktop
+	"
+)
+echo "Recommended things to do:"
+for todo in "${todoset[@]}"; do
+	echo "	$todo"
+done
+
+echo ""
+
+echo "Description"
+for tododesc in "${todoset_description[@]}"; do
+	echo "	$tododesc"
+done
+# ----------------------
+
+echo ""
+
 read -p "Reboot? [Y|N]: " reboot_confirm
 if [ "$reboot_confirm" == "Y" ]; then
 # 	exit
