@@ -4,6 +4,215 @@
 # ArchLinux Installation.txt                       #
 ####################################################
 
+# --- Post Installation Start ---
+#--------------
+# User Control
+#--------------
+```
+add_opt : Additonal Options [i.e. -m]
+ugroups : Groups
+home_dir : Home Directory
+uname : Username
+```
+useradd $add_opt -G $ugroups -d $home_dir $uname
+
+# Set Admin user password
+passwd $uname
+
+#------------
+# Networking
+#------------
+sudo pacman -S networkmanager dhcpcd wireless_tools wpa_supplicant dialog netctl
+
+# Setup Network - Wired
+sudo NetworkManager start
+
+# Setup Network - Wireless
+# Check all wifi in your area
+nmcli dev wifi
+```
+AP_name : Your wifi name
+AP_pass : Your wifi password
+```
+nmcli device wifi connect $AP_name password $AP_pass
+
+
+#---------------------
+# Package Management
+#---------------------
+# To refer to "ArchLinux Post Installation under [Package Management]"
+```
+filemgr : File Manager
+term : Terminal
+browser : Browser
+texteditor : Text Editor
+```
+sudo pacman -S $filemgr $term $browser $texteditor
+
+#--------------------------
+# Other Package Mangement
+#--------------------------
+# To refer to "ArchLinux Post Installation under [Additional Package Installations]"
+
+# -- Install Microcodes
+sudo pacman -S intel-ucode amd-ucode
+
+# -- Install Graphical Utilities
+echo "Installing graphical utilities..."
+sudo pacman -S xorg xorg-server xorg-xinit xorg-server-utils
+
+# -- Install Audio Controls
+echo "Installing audio controls..."
+sudo pacman -S pulseaudio pulseaudio-alsa
+
+# -- Install 3D Support
+echo "Installing 3D support..."
+sudo pacman -S mesa
+
+# -- Install NVIDIA support
+echo "Installing NVIDIA support..."
+sudo pacman -S nvidia lib32-nvidia-utils
+
+# -- Install laptop support
+echo "Installing Laptop support..."
+sudo pacman -S xf86-input-synaptics
+
+# -- Install Fonts
+echo "Installing Fonts"
+sudo pacman -S ttf-dejavu
+
+# -- Install Default Window Manager and X controls
+echo "Installing default window manager and X controls..."
+sudo pacman -S xorg-twm xorg-xclock xterm
+
+
+#----------------
+# Home Directory
+#----------------
+# To refer to "ArchLinux Post Installation under [Home Directory]"
+# Dotfiles/Dotfolders
+DOTFLDRS=(~/.archive ~/.logs ~/.configs ~/.local ~/.vim)
+DEFAULT_FLDRS=(~/configs ~/Desktop ~/Downloads ~/globals)
+DOTFILES=(~/.bashrc-personal ~/.Xresources)
+# Making folders
+for fldrs in ${DOTFLDRS[@]}; do
+	mkdir -p $fldrs
+done
+for deffldrs in ${DEFAULT_FLDRS[@]}; do
+	mkdir -p $deffldrs
+done
+# Making Files
+for files in ${DOTFILES[@]}; do
+	touch $files
+done
+
+# Xresources
+## Generate Xresources with a default template
+xrdb -query | tee -a ~/.Xresources
+						
+#-------
+# AUR
+#-------
+# To refer to "ArchLinux Post Installation under [AUR]"
+# Pre-Requisites: git
+```
+Ensure you have git
+ - If not 
+ pacman -S git
+```
+
+# Setup AUR
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+yay
+							
+#----------------
+# Frontend Setup
+#----------------
+(DE) Desktop Environment vs (WM) Window Manager
+"WM") 
+	## List of Window Managers
+	wm_list=("OpenBox" "i3" "Awesome" "Deepin" "Sway" "dwm")
+	"OpenBox") sudo pacman -S openbox
+		start_x="openbox-session"
+		;;
+	"i3") sudo pacman -S i3
+		start_x="i3"
+		;;
+	"Awesome") sudo pacman -S awesome
+		start_x="awesome"
+		;;
+	"Deepin") sudo pacman -S deepin
+		start_x="startdde"
+		;;
+	"Sway") sudo pacman -S swaywm
+		start_x="sway"
+		;;
+	"dwm") 
+		git clone git://git.suckless.org/dwm
+		;;
+"DE")	
+	## Desktop Environment
+	de_list=("GNOME" "KDE-Plasma" "XFCE" "Cinnamon" "Mate" "LXDE")
+	"GNOME") sudo pacman -S gnome
+		start_x="gnome-session"
+		;;
+	"KDE-Plasma") sudo pacman -S xorg plasma plasma-wayland-session kde-applications
+		start_x="plasma"
+		;;
+	"XFCE") sudo pacman -S xfce4
+		start_x="startxfce4"
+		;;
+	"Cinnamon") sudo pacman -S cinnamon
+		start_x="cinnamon-session"
+		;;
+	"Mate") sudo pacman -S mate
+		start_x="mate-session"
+		;;
+	"LXDE") sudo pacman -S lxde
+		start_x="startdde"
+		;;
+					
+#-----------------
+# Display Manager
+#-----------------
+# To refer to "ArchLinux Post Installation under [Display Manager]"
+# (DM) Display Manager vs (S) Static Execute (exec/sx)
+"DM" | "Display Manager") 
+		# Select and Install your Display Manager [gdm | sddm | lightdm | others]
+		"gdm") sudo pacman -S gdm
+				;;
+		"sddm") sudo pacman -S sddm
+				;;
+		"lightdm") sudo pacman -S lightdm
+				;;
+		"others") 
+			# Custom Display Manager
+			sudo pacman -S $custom_dm
+			selected_dm="$custom_dm"
+			;;
+
+		# Display Manager service
+		dm_service=$selected_dm.service
+		
+		# Display Manager [(S)tart | (E)nable | (B)oth]
+		"S" | "Start") sudo systemctl start $dm_service
+					;;
+		"E" | "Enable") sudo systemctl enable $dm_service
+					;;
+		"B" | "Both")
+					sudo systemctl enable $dm_service
+					sudo systemctl start $dm_service
+					;;
+
+"S"  | "Static exec") 
+		echo "exec $start_x" | ~/.xinitrc
+		;;
+
+
+# --- DRAFT ---
+
 > Display Server
 Install Packages:
 	xorg
@@ -47,3 +256,5 @@ Install AUR Helpers
 		- Join and Activate Steam Beta
 		- Activate Steam Proton
 	Install Lutris
+
+
