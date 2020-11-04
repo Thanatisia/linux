@@ -75,10 +75,15 @@ function package_install()
 	fi
 }
 
+function package_update()
+{
+    update-logged.sh
+}
+
 function package_menu()
 {
-	pkgmenu_options=("(I)nstall" "(H)elp" "(Q)uit")
-	pkgmenu_Help=("(I)nstall : Use this to install via your package manager - currently $pkgmgr" "(H)elp : This message" "(Q)uit : To quit this program")
+    pkgmenu_options=("(I)nstall" "(U)pdate" "(H)elp" "(Q)uit")
+    pkgmenu_Help=("(I)nstall : Use this to install via your package manager - currently $pkgmgr" "(U)pdate : Do a update using the relevant package managers (i.e. pacman [pacman -Syu], apt(-get) [sudo apt update && sudo apt upgrade]" "(H)elp : This message" "(Q)uit : To quit this program")
 	# List all options
 	echo "Options: "
 	for option in "${pkgmenu_options[@]}"; do
@@ -95,6 +100,11 @@ function package_menu()
 				package_install
 				opt=""
 				;;
+            "U" | "Update")
+                echo "Updating packages..."
+                echo ""
+                package_update
+                ;;
 			"H" | "Help") 
 				echo "Help"
 				for man in "${pkgmenu_Help[@]}"; do
