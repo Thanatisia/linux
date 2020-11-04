@@ -234,7 +234,7 @@ bootpart_size=""
 rootpart_size=""
 homepart_size=""
 arr_partition_Types=() # All Partition Types
-while [ ! "$opt" == "Quit" ]; do
+while [ ! "$opt" == "Quit" ] && [ ! "$opt" == "Q" ]; do
 	for partopt in "${part_Options[@]}"; do
 		echo "	$partopt"
 	done
