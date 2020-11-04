@@ -175,11 +175,13 @@ case "$opt" in
 				start_x="startdde"
 				;;
 			"Sway") sudo pacman -S swaywm
+				start_x="sway"
 				;;
 			"dwm") 
 				git clone git://git.suckless.org/dwm
 				;;
 		esac
+		;;
 	"DE")	# Desktop Environment
 		de_list=("GNOME" "KDE-Plasma" "XFCE" "Cinnamon" "Mate" "LXDE")
 		for de_ in ${de_list[@]}; do
