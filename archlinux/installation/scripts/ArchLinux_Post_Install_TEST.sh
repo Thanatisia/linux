@@ -92,8 +92,6 @@ function installer()
 							# To refer to "ArchLinux Post Installation under [Networking]"
 							sudo pacman -S networkmanager dhcpcd wireless_tools wpa_supplicant dialog netctl
 
-							
-
 							# -------- Unable to run systemctl commands in arch-chroot
 							# Setup Network - Wired
 							# sudo NetworkManager start
