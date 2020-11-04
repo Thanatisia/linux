@@ -34,7 +34,7 @@ case "$add_opt" in
 		;;
 	*) ;;
 esac
-command+="$ uname"
+command+=" $uname"
 echo "Command: [$command]"
 # -------------------------
 
