@@ -132,7 +132,6 @@ done
 # Xresources
 ## Generate Xresources with a default template
 xrdb -query | tee -a ~/.Xresources
-;;
 						
 #-------
 # AUR
