@@ -295,7 +295,7 @@ function installer()
 				;;
 			"D" | "Default")
 				echo "Options reset'd to default."
-				install_ToDo=(${default_ToDo[@]})
+				install_ToDo=("${default_ToDo[@]}")
 				;;
 			"H" | "Help") echo "Help"
 				for man in "${menu_Help[@]}"; do
