@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///usr/bin/alacritty" added="2020-09-27T14:54:29.513386Z" modified="2020-10-21T15:58:33.568101Z" visited="2020-09-27T14:54:29.513387Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="exo-helper-2" exec="&apos;exo-helper-2 %u&apos;" modified="2020-09-27T15:00:23.597279Z" count="2"/>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2020-10-21T15:58:33.568099Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Software/Polybar/config.siduck" added="2020-10-01T20:29:32.150923Z" modified="2020-10-01T20:29:32.512786Z" visited="2020-10-01T20:29:32.150926Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T20:29:32.512783Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Font/Material%20Design%20Icons/materialdesignicons-webfont.woff2" added="2020-10-01T21:17:53.658220Z" modified="2020-10-01T21:17:54.010145Z" visited="2020-10-01T21:17:53.658224Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/woff2"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T21:17:54.010139Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Font/Material%20Design%20Icons/materialdesignicons-webfont.ttf" added="2020-10-01T21:17:57.759870Z" modified="2020-10-01T21:17:58.101302Z" visited="2020-10-01T21:17:57.759878Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T21:17:58.101292Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Font/Material%20Design%20Icons/materialdesignicons-webfont.eot" added="2020-10-01T21:18:00.574845Z" modified="2020-10-01T21:18:00.952835Z" visited="2020-10-01T21:18:00.574849Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T21:18:00.952831Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Font/Material%20Design%20Icons/materialdesignicons-webfont.woff" added="2020-10-01T21:18:03.432174Z" modified="2020-10-01T21:18:03.802744Z" visited="2020-10-01T21:18:03.432177Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/woff"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T21:18:03.802738Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/bunny" added="2020-10-01T21:24:10.474065Z" modified="2020-10-01T21:24:10.824208Z" visited="2020-10-01T21:24:10.474068Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-01T21:24:10.824205Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/.config/polybar/launch.sh" added="2020-10-02T01:55:03.147345Z" modified="2020-10-02T01:55:03.147349Z" visited="2020-10-02T01:55:03.147346Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-02T01:55:03.147347Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/o.jpg" added="2020-10-02T06:16:54.121530Z" modified="2020-10-02T06:16:54.484929Z" visited="2020-10-02T06:16:54.121531Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:16:54.484924Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/cutie.jpg" added="2020-10-02T06:17:01.194359Z" modified="2020-10-02T06:17:01.590789Z" visited="2020-10-02T06:17:01.194361Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:01.590784Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/shot.png" added="2020-10-02T06:17:22.046929Z" modified="2020-10-02T06:17:22.389288Z" visited="2020-10-02T06:17:22.046932Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:22.389283Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/mat.png" added="2020-10-02T06:17:27.349824Z" modified="2020-10-02T06:17:27.696256Z" visited="2020-10-02T06:17:27.349826Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:27.696252Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/kde.png" added="2020-10-02T06:17:30.661425Z" modified="2020-10-02T06:17:30.993646Z" visited="2020-10-02T06:17:30.661427Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:30.993642Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/ani.jpg" added="2020-10-02T06:17:39.903791Z" modified="2020-10-02T06:17:40.293445Z" visited="2020-10-02T06:17:39.903794Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:40.293441Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/236.jpg" added="2020-10-02T06:17:45.049097Z" modified="2020-10-02T06:17:45.485505Z" visited="2020-10-02T06:17:45.049099Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:45.485500Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/229.jpg" added="2020-10-02T06:17:48.829685Z" modified="2020-10-02T06:17:49.149819Z" visited="2020-10-02T06:17:48.829687Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:49.149814Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/vera.jpg" added="2020-10-02T06:17:52.454798Z" modified="2020-10-02T06:17:52.778600Z" visited="2020-10-02T06:17:52.454800Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:52.778596Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/car.png" added="2020-10-02T06:17:59.256760Z" modified="2020-10-02T06:17:59.842348Z" visited="2020-10-02T06:17:59.256762Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:17:59.842344Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/tools.jpg" added="2020-10-02T06:18:05.784852Z" modified="2020-10-02T06:18:06.194138Z" visited="2020-10-02T06:18:05.784853Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:06.194135Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/voilet.jpg" added="2020-10-02T06:18:09.377603Z" modified="2020-10-02T06:18:09.797680Z" visited="2020-10-02T06:18:09.377607Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:09.797673Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/room.jpg" added="2020-10-02T06:18:14.039869Z" modified="2020-10-02T06:18:14.351143Z" visited="2020-10-02T06:18:14.039871Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:14.351139Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/gta.jpg" added="2020-10-02T06:18:19.572203Z" modified="2020-10-02T06:18:19.938046Z" visited="2020-10-02T06:18:19.572205Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:19.938040Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/legen.png" added="2020-10-02T06:18:26.448418Z" modified="2020-10-02T06:18:26.821892Z" visited="2020-10-02T06:18:26.448419Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:26.821888Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/ne.jpg" added="2020-10-02T06:18:31.979993Z" modified="2020-10-02T06:18:32.299092Z" visited="2020-10-02T06:18:31.979995Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:32.299087Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/rien.jpg" added="2020-10-02T06:18:36.515404Z" modified="2020-10-02T06:18:36.825766Z" visited="2020-10-02T06:18:36.515406Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:36.825762Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/cat.jpg" added="2020-10-02T06:18:40.920802Z" modified="2020-10-02T06:18:41.261133Z" visited="2020-10-02T06:18:40.920805Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:41.261127Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/illuet.jpeg" added="2020-10-02T06:18:44.434800Z" modified="2020-10-02T06:18:44.737358Z" visited="2020-10-02T06:18:44.434802Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:44.737354Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/ghost.png" added="2020-10-02T06:18:49.202718Z" modified="2020-10-02T06:18:49.565059Z" visited="2020-10-02T06:18:49.202720Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:18:49.565055Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/gren.jpeg" added="2020-10-02T06:18:54.768581Z" modified="2020-10-02T06:19:05.827431Z" visited="2020-10-02T06:18:54.768584Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:05.827427Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/xfnord.jpg" added="2020-10-02T06:18:59.590164Z" modified="2020-10-02T06:19:05.830089Z" visited="2020-10-02T06:18:59.590165Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:05.830085Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/Material-Wallpaper-4-1920x1080.png" added="2020-10-02T06:19:23.003009Z" modified="2020-10-02T06:19:23.351500Z" visited="2020-10-02T06:19:23.003011Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:23.351495Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/Material-Wallpaper-12-1200x900.jpg" added="2020-10-02T06:19:28.954639Z" modified="2020-10-02T06:19:29.272379Z" visited="2020-10-02T06:19:28.954641Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:29.272376Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/red.png" added="2020-10-02T06:19:39.431443Z" modified="2020-10-02T06:19:39.760396Z" visited="2020-10-02T06:19:39.431445Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:39.760392Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/nordic.jpg" added="2020-10-02T06:19:44.181435Z" modified="2020-10-02T06:19:44.497452Z" visited="2020-10-02T06:19:44.181438Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:44.497448Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/forestt.jpg" added="2020-10-02T06:19:47.721938Z" modified="2020-10-02T06:19:48.052037Z" visited="2020-10-02T06:19:47.721941Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:48.052033Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/jpeg/mikael-gustafsson-amongtrees-2-8.jpg" added="2020-10-02T06:19:50.926259Z" modified="2020-10-02T06:19:51.271357Z" visited="2020-10-02T06:19:50.926260Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-02T06:19:51.271352Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/bin/gifview" added="2020-10-02T15:28:40.853988Z" modified="2020-10-02T15:28:40.853992Z" visited="2020-10-02T15:28:40.853989Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2020-10-02T15:28:40.853990Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/.config/polybar/test.sh" added="2020-10-03T00:27:27.868905Z" modified="2020-10-03T00:27:27.868909Z" visited="2020-10-03T00:27:27.868905Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-03T00:27:27.868907Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Bash/Debug/get_params.sh" added="2020-10-03T01:13:00.696429Z" modified="2020-10-03T01:13:00.696433Z" visited="2020-10-03T01:13:00.696430Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-03T01:13:00.696431Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/2020-10-03-214042_3600x1080_scrot.png" added="2020-10-03T13:42:19.043607Z" modified="2020-10-03T13:42:19.043613Z" visited="2020-10-03T13:42:19.043608Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-03T13:42:19.043610Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/shlib.sh" added="2020-10-03T23:36:34.989289Z" modified="2020-10-03T23:36:34.989294Z" visited="2020-10-03T23:36:34.989290Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-03T23:36:34.989291Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/debugger.sh" added="2020-10-03T23:45:03.801432Z" modified="2020-10-03T23:45:03.801436Z" visited="2020-10-03T23:45:03.801432Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-03T23:45:03.801434Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/repos/calcurse/calcurse-4.6.0.zip" added="2020-10-05T00:40:33.970427Z" modified="2020-10-05T00:40:34.507363Z" visited="2020-10-05T00:40:33.970429Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-05T00:40:34.507356Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/repos/calcurse/calcurse-4.6.0.tar.gz" added="2020-10-05T00:40:54.766990Z" modified="2020-10-05T00:40:55.774131Z" visited="2020-10-05T00:40:54.766992Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-05T00:40:55.774124Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/png/A2_1920x1080.png" added="2020-10-05T07:29:40.581839Z" modified="2020-10-05T07:29:43.995425Z" visited="2020-10-05T07:29:40.581842Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-05T07:29:43.995413Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Python/GUI-WS-1/workspace/modules/pygui.py" added="2020-10-06T07:47:37.200198Z" modified="2020-10-06T07:47:37.200205Z" visited="2020-10-06T07:47:37.200199Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-06T07:47:37.200201Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/bin/vim" added="2020-10-06T10:34:45.617690Z" modified="2020-10-21T15:59:13.005636Z" visited="2020-10-06T10:34:45.617691Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2020-10-21T15:59:13.005633Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Python/GUI-WS-1/workspace/modules/pysqlite.py" added="2020-10-08T13:42:53.392619Z" modified="2020-10-08T13:42:53.392624Z" visited="2020-10-08T13:42:53.392620Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-08T13:42:53.392622Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Python/GUI-WS-1/workspace/modules/pysec.py" added="2020-10-09T03:04:59.544711Z" modified="2020-10-09T03:04:59.544716Z" visited="2020-10-09T03:04:59.544712Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-09T03:04:59.544713Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Python/GUI-WS-1/workspace/sqlite3main.py" added="2020-10-09T05:41:54.737453Z" modified="2020-10-09T05:41:54.737459Z" visited="2020-10-09T05:41:54.737453Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-09T05:41:54.737455Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Xresources/atelierdune.dark.txt" added="2020-10-11T13:49:22.388641Z" modified="2020-10-11T13:49:22.714171Z" visited="2020-10-11T13:49:22.388643Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:49:22.714163Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Alacritty/atelierdune.dark.txt" added="2020-10-11T13:49:39.608310Z" modified="2020-10-11T13:49:39.957733Z" visited="2020-10-11T13:49:39.608313Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:49:39.957728Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/hallow.png" added="2020-10-11T13:57:00.950366Z" modified="2020-10-11T13:57:01.286454Z" visited="2020-10-11T13:57:00.950368Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:01.286450Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/serv.png" added="2020-10-11T13:57:06.326434Z" modified="2020-10-11T13:57:06.699063Z" visited="2020-10-11T13:57:06.326437Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:06.699058Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/fest.jpg" added="2020-10-11T13:57:12.038780Z" modified="2020-10-11T13:57:12.412553Z" visited="2020-10-11T13:57:12.038783Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:12.412549Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/qunit.jpg" added="2020-10-11T13:57:15.671451Z" modified="2020-10-11T13:57:16.004499Z" visited="2020-10-11T13:57:15.671452Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:16.004492Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/bis.png" added="2020-10-11T13:57:19.092677Z" modified="2020-10-11T13:57:19.418564Z" visited="2020-10-11T13:57:19.092678Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:19.418558Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/bitch.jpg" added="2020-10-11T13:57:23.988222Z" modified="2020-10-11T13:57:24.317081Z" visited="2020-10-11T13:57:23.988224Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:24.317075Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/gang.jpg" added="2020-10-11T13:57:27.001527Z" modified="2020-10-11T13:57:27.341329Z" visited="2020-10-11T13:57:27.001529Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:27.341319Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/catface.jpg" added="2020-10-11T13:57:29.580262Z" modified="2020-10-11T13:57:29.903082Z" visited="2020-10-11T13:57:29.580264Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:29.903064Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/forestpath.jpg" added="2020-10-11T13:57:32.270160Z" modified="2020-10-11T13:57:32.575972Z" visited="2020-10-11T13:57:32.270163Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:32.575962Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/flat.jpg" added="2020-10-11T13:57:36.578590Z" modified="2020-10-11T13:57:38.350758Z" visited="2020-10-11T13:57:36.578592Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T13:57:38.350748Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo5244931586074455384.jpg" added="2020-10-11T14:00:16.220314Z" modified="2020-10-11T14:00:16.569972Z" visited="2020-10-11T14:00:16.220315Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:16.569963Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo4904815350697273455.jpg" added="2020-10-11T14:00:22.543042Z" modified="2020-10-11T14:00:22.884476Z" visited="2020-10-11T14:00:22.543045Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:22.884469Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo6215353011081947815.jpg" added="2020-10-11T14:00:28.614396Z" modified="2020-10-11T14:00:28.958400Z" visited="2020-10-11T14:00:28.614398Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:28.958379Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo532583306734649321.jpg" added="2020-10-11T14:00:39.981428Z" modified="2020-10-11T14:00:40.319851Z" visited="2020-10-11T14:00:39.981430Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:40.319840Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo6062312365568928256.jpg" added="2020-10-11T14:00:45.991054Z" modified="2020-10-11T14:00:46.438384Z" visited="2020-10-11T14:00:45.991057Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:46.438378Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo5240386819185552970.jpg" added="2020-10-11T14:00:51.425033Z" modified="2020-10-11T14:00:52.073346Z" visited="2020-10-11T14:00:51.425034Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:00:52.073334Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo5249163610624733097.jpg" added="2020-10-11T14:00:59.793347Z" modified="2020-10-11T14:01:01.140626Z" visited="2020-10-11T14:00:59.793349Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:01:01.140618Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo5244451739443244742.jpg" added="2020-10-11T14:01:13.564670Z" modified="2020-10-11T14:01:13.907136Z" visited="2020-10-11T14:01:13.564671Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:01:13.907130Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo5244451739443244743.jpg" added="2020-10-11T14:01:18.231476Z" modified="2020-10-11T14:01:18.551932Z" visited="2020-10-11T14:01:18.231478Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:01:18.551901Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo4983777538455218348.jpg" added="2020-10-11T14:03:50.282789Z" modified="2020-10-11T14:03:50.624288Z" visited="2020-10-11T14:03:50.282791Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:03:50.624285Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/media/images/downloads/photo4985535490044307677.jpg" added="2020-10-11T14:04:00.915826Z" modified="2020-10-11T14:04:01.237713Z" visited="2020-10-11T14:04:00.915828Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:04:01.237705Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Alacritty/atelierlakeside.light.txt" added="2020-10-11T14:15:55.153442Z" modified="2020-10-11T14:15:58.008324Z" visited="2020-10-11T14:15:55.153443Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:15:58.008320Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Xresources/atelierlakeside.light.txt" added="2020-10-11T14:16:15.714031Z" modified="2020-10-11T14:16:16.291975Z" visited="2020-10-11T14:16:15.714033Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:16:16.291956Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Xresources/solarized.dark.txt" added="2020-10-11T14:20:24.030110Z" modified="2020-10-11T14:20:24.358232Z" visited="2020-10-11T14:20:24.030111Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:20:24.358227Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Alacritty/solarized.dark.txt" added="2020-10-11T14:20:36.930666Z" modified="2020-10-11T14:20:37.255113Z" visited="2020-10-11T14:20:36.930668Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:20:37.255086Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Xresources/navy-and-ivory.txt" added="2020-10-11T14:40:22.407082Z" modified="2020-10-11T14:40:22.737324Z" visited="2020-10-11T14:40:22.407084Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:40:22.737321Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Alacritty/navy-and-ivory.txt" added="2020-10-11T14:40:30.661862Z" modified="2020-10-11T14:40:30.976765Z" visited="2020-10-11T14:40:30.661863Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:40:30.976757Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Alacritty/random-1.txt" added="2020-10-11T14:55:48.753041Z" modified="2020-10-11T14:55:51.120478Z" visited="2020-10-11T14:55:48.753042Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:55:51.120472Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/sharefolder/rice/Terminal/Xresources/random-1.txt" added="2020-10-11T14:56:03.970935Z" modified="2020-10-11T14:56:09.303003Z" visited="2020-10-11T14:56:03.970939Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-11T14:56:09.302993Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/projects/CODE/Python/GUI-WS-1/workspace/modules/pymath.py" added="2020-10-12T03:12:58.767217Z" modified="2020-10-12T03:12:58.767224Z" visited="2020-10-12T03:12:58.767218Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-12T03:12:58.767221Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/manpdf.sh" added="2020-10-12T13:40:51.853189Z" modified="2020-10-12T13:40:51.853195Z" visited="2020-10-12T13:40:51.853190Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-12T13:40:51.853193Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/.vim/autoload/plugin-install-guide" added="2020-10-15T20:43:28.592411Z" modified="2020-10-15T20:43:28.592418Z" visited="2020-10-15T20:43:28.592412Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-15T20:43:28.592415Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/repos/pandoc-2.11.0.2-linux-amd64.tar.gz" added="2020-10-18T06:48:09.855735Z" modified="2020-10-18T06:48:17.988057Z" visited="2020-10-18T06:48:09.855736Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-18T06:48:17.988053Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/Templates/category-seperate_scripts-20201018-2225H.sh" added="2020-10-18T14:25:47.026069Z" modified="2020-10-18T14:25:47.026074Z" visited="2020-10-18T14:25:47.026069Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-18T14:25:47.026071Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/template-logger.sh" added="2020-10-22T22:30:04.372187Z" modified="2020-10-22T22:30:04.372191Z" visited="2020-10-22T22:30:04.372188Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-22T22:30:04.372189Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/connect_wifi.sh" added="2020-10-23T12:53:42.683814Z" modified="2020-10-23T12:53:42.683818Z" visited="2020-10-23T12:53:42.683814Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-23T12:53:42.683816Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/repos/New%20Tab.html" added="2020-10-24T13:58:11.620907Z" modified="2020-10-24T13:58:12.008256Z" visited="2020-10-24T13:58:11.620908Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-10-24T13:58:12.008249Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/strutil.sh" added="2020-10-25T15:05:08.988808Z" modified="2020-10-25T15:05:08.988813Z" visited="2020-10-25T15:05:08.988808Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-25T15:05:08.988810Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/Compilers/cpp_compile_test.sh" added="2020-10-30T23:02:08.850079Z" modified="2020-10-30T23:02:08.850086Z" visited="2020-10-30T23:02:08.850080Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-10-30T23:02:08.850083Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/admin/asura/Desktop/portable/scripts/bash/rofiutils.sh" added="2020-11-01T10:34:56.821656Z" modified="2020-11-01T10:34:56.821661Z" visited="2020-11-01T10:34:56.821657Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;subl %u&apos;" modified="2020-11-01T10:34:56.821659Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

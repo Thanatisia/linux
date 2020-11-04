@@ -1,0 +1,14 @@
+[Added Associations]
+text/x-log=sublime_text.desktop;Alacritty.desktop;
+image/gif=userapp-gifview"-CC12R0.desktop;userapp-"gifview"-3C09Q0.desktop;nitrogen.desktop;
+application/x-shellscript=sublime_text.desktop;vim.desktop;Alacritty.desktop;nvim.desktop;
+text/plain=sublime_text.desktop;Alacritty.desktop;nvim.desktop;userapp-vim"-N7TAT0.desktop;userapp-vim"-4328S0.desktop;userapp-alacritty -e vim"-DR4ZS0.desktop;userapp-"alacritty -e vim"-GPMUS0.desktop;vim.desktop;
+application/x-yaml=sublime_text.desktop;Alacritty.desktop;
+text/x-c++src=sublime_text.desktop;
+text/x-python=sublime_text.desktop;userapp-"alacritty -e vim %s"-0IUUR0.desktop;userapp-vim" %s"-KGCSR0.desktop;vim.desktop;userapp-vim"-YUSMR0.desktop;userapp-"alacritty -e vim"-OSIYR0.desktop;Alacritty.desktop;
+text/x-chdr=sublime_text.desktop;
+text/x-makefile=sublime_text.desktop;
+text/html=sublime_text.desktop;
+text/x-objcsrc=sublime_text.desktop;
+
+[Removed Associations]

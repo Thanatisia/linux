@@ -1,0 +1,10 @@
+#-----------------
+# Personal Bashrc
+#  Git-based
+#-----------------
+
+GIT_REPO_PATH=~/Desktop/portable/repos
+GIT_REPO_PATHS=($GIT_REPO_PATH/surf $GIT_REPO_PATH/sxiv $GIT_REPO_PATH/neix/bin $GIT_REPO_PATH/pandoc-2.11.0.2/bin $GIT_REPO_PATH/foo-Wallpaper-Feh-Gif $GIT_REPO_PATH/calcurse)
+for gitrepo in "${GIT_REPO_PATHS[@]}"; do
+    PATH=$PATH:$gitrepo
+done

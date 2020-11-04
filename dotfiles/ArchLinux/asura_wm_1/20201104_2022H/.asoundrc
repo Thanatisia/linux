@@ -1,0 +1,33 @@
+#pcm.!default {
+#        type hw
+#        card 1
+#}
+
+#ctl.!default {
+#        type hw           
+#        card 1
+#}
+
+#pcm.!default {
+#    type hw
+#    card 1
+#}
+
+pcm.custom {
+    type plug
+    slave {
+        pcm "dmix:1,0"
+    }
+}
+
+#ctl.!default {
+#    type hw
+#    card 1
+#}
+
+ctl.custom {
+    type hw
+    card Creative
+}
+
+pcm.!default pcm.custom
