@@ -348,14 +348,7 @@ read -p "Partition to mount /mnt/home [/dev/sdXY (dev/sdX3)]: " homemntpart
 mount $homemntpart /mnt/home
 
 # Pacstrap libraries
-echo "Starting to strap packages [$pacstrap_pkgs] to /mnt..."
-echo ""
-
 pacstrap /mnt $pacstrap_pkgs  								# NOTES: These are the minimal for installations; Strap libraries to /mnt (ArchLinux Kernel etc.)
-
-echo "Package strap completed."
-echo ""
-
 # Generate an fstab file
 genfstab -U /mnt >> /mnt/etc/fstab 							
 
@@ -381,10 +374,8 @@ arch-chroot /mnt echo "127.0.0.1	localhost" >> /etc/hosts
 arch-chroot /mnt echo "::1       localhost" >> /etc/hosts 
 # 7 empty spaces to localhost
 arch-chroot /mnt echo "127.0.1.1	$hostname.localdomain	$hostname" >> /etc/hosts
-echo "[Make initialcp i/o kernels]"
 arch-chroot /mnt mkinitcpio -P linux	# Initialize and create new ram file system
 arch-chroot /mnt mkinitcpio -P linux-lts # Initialize and create new ram file system
-echo "[Set root password]"
 arch-chroot /mnt passwd 			# Set Root Password
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/s/^#//g' /etc/sudoers 					# Allow new users to run sudo; PLEASE DO NOT USE SCRIPTS TO EDIT SUDOERS, use [EDITOR=<your editor> visudo]
 arch-chroot /mnt bash -c 'echo "Y" | pacman -S os-prober'
