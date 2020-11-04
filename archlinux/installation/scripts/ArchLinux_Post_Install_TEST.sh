@@ -54,16 +54,31 @@ function installer()
 					case "$todo" in 
 						"U" | "(U)ser Control") echo "User Control"
 							# To refer to "ArchLinux Post Installation under [User Control]"
-							read -p "Username: " uname
+							read -p "Additonal Options [i.e. -m]: " add_opt
 							read -p "Groups: " ugroups
 							read -p "Home Directory: " home_dir
-							read -p "Additonal Options: " add_opt
+							read -p "Username: " uname
+							
 							if [ -z "$ugroups" ]; then
 								ugroups="wheel"
 							fi
 
+							#--------------------------
+							# Generate useradd command
+							command="useradd"
+							command+="$add_opt -G $ugroups "
+							case "$add_opt" in 
+								"-m") command+="-d $home_dir"
+								*) ;;
+							esac
+							command+="$uname"
+							echo "Command: [$command]"
+							# -------------------------
+
 							uc_success="0"
-							useradd $add_opt -G $ugroups -d $home_dir $uname && uc_success="1" || uc_success="0"
+							# useradd $add_opt -G $ugroups -d $home_dir $uname && uc_success="1" || uc_success="0"
+							# Substitue raw command with variable
+							$command && uc_success="1" || uc_success="0"
 
 							if [ "$uc_success" == "1" ]; then
 								echo "User $uname successfully created."
@@ -77,19 +92,22 @@ function installer()
 							# To refer to "ArchLinux Post Installation under [Networking]"
 							sudo pacman -S networkmanager dhcpcd wireless_tools wpa_supplicant dialog netctl
 
+							
+
+							# -------- Unable to run systemctl commands in arch-chroot
 							# Setup Network - Wired
-							sudo NetworkManager start
+							# sudo NetworkManager start
 
 							# Sleep for a while to let the networkmanager take effect
-							sleep 5
+							# sleep 5
 
 							# Setup Network - Wireless
-							nmcli dev wifi
-							read -p "Enter your AP name: " AP_name
-							read -p "Enter your AP pass: " AP_pass
-							if [ ! -z "$AP_name" ] && [ ! -z "$AP_pass" ]; then
-								nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
-							fi
+							# nmcli dev wifi
+							# read -p "Enter your AP name: " AP_name
+							# read -p "Enter your AP pass: " AP_pass
+							# if [ ! -z "$AP_name" ] && [ ! -z "$AP_pass" ]; then
+							# 	nmcli device wifi connect $AP_name password $AP_pass && echo "Successfully connected." || echo "Error connecting"
+							#fi
 							;;
 						"P" | "(P)ackage Management") echo "Package Management"
 							# To refer to "ArchLinux Post Installation under [Package Management]"
