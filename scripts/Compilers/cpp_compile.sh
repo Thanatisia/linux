@@ -133,8 +133,9 @@ case "$option" in
         if [ -z "$tmp_opt" ]; then
             # Additional options
             read -p "Additional Options: " OTHER_PARAMS
+        else
+            OTHER_PARAMS="$tmp_opt"
         fi
-        OTHER_PARAMS="$tmp_opt"
 
         # Prepare parameters
         if [ "$param_1_condition_1" == "$param_1_condition_2" ]; then
