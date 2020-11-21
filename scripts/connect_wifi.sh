@@ -36,7 +36,7 @@ fi
 
 # -- Connect to wifi
 connect_Status=0 # Check if connected - 1 for connected; 0 for not connected;
-nmcli device wifi connect $AP_name password $AP_password | tee -a ~/.logs/wifi-connecting.log && connect_Status=1 || connect_Status=0
+nmcli device wifi connect "$AP_name" password $AP_password | tee -a ~/.logs/wifi-connecting.log && connect_Status=1 || connect_Status=0
 
 if [ "$connect_Status" == "1" ]; then
 	echo "Wifi device [$AP_name] connected successfully." | tee -a ~/.logs/wifi-connected.log 

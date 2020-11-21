@@ -25,29 +25,34 @@ if [ ! -z "$1" ]; then
 	                # default: elf_i386
 	                nasm_exe_format=$5
 	            else
-	                nasm_exe_format="elf_i386"
-	            fi
+	                # nasm_exe_format="elf_i386"
+	                nasm_exe_format=""
+                fi
 	        else
-	            nasm_format="elf32"
-	            nasm_exe_format="elf_i386"
+	            nasm_format="elf64"
+	            # nasm_exe_format="elf_i386"
+                nasm_exe_format=""
 	        fi
 	    else
 	        read -p "Output executable file (i.e. helloworld.exe): " output_executable_file
-	        nasm_format="elf32"
-	        nasm_exe_format="elf_i386"
+	        nasm_format="elf64"
+	        # nasm_exe_format="elf_i386"
+            nasm_exe_format=""
 	    fi
 	else
 	    read -p "Output object file (i.e helloworld.o): " obj_file
 	    read -p "Output executable file (i.e. helloworld.exe): " output_executable_file
-	    nasm_format="elf32"
-	    nasm_exe_format="elf_i386"
+	    nasm_format="elf64"
+	    # nasm_exe_format="elf_i386"
+        nasm_exe_format=""
 	fi
 else
 		read -p "Input source file (i.e. helloworld.asm): " src_file
 	    read -p "Output object file (i.e helloworld.o): " obj_file
 	    read -p "Output executable file (i.e. helloworld.exe): " output_executable_file
-	    nasm_format="elf32"
-	    nasm_exe_format="elf_i386"
+	    nasm_format="elf64"
+	    # nasm_exe_format="elf_i386"
+        nasm_exe_format=""
 fi
 
 # --- Example
@@ -64,5 +69,8 @@ fi
 nasm -f $nasm_format -o $obj_file $src_file | tee -a ~/.logs/asm-compilation-proc.log && echo "$obj_file has been generated." || echo "Error generating object file $obj_file"
 
 # Make object file into an executable
-ld -m $nasm_exe_format -o $output_executable_file $obj_file | tee -a ~/.logs/asm-compilation-proc.log && echo "$obj_file has been converted to executable file $output_executable_file" || echo "Error converting to $output_executable_file"
-
+if [ ! -z "$nasm_exe_format" ]; then
+    ld -m $nasm_exe_format -o $output_executable_file $obj_file | tee -a ~/.logs/asm-compilation-proc.log && echo "$obj_file has been converted to executable file $output_executable_file" || echo "Error converting to $output_executable_file"
+else
+    ld -o $output_executable_file $obj_file | tee -a ~/.logs/asm-compilation-proc.log && echo "$obj_file has been converted to executable file $output_executable_file" || echo "Error converting to $output_executable_file"
+fi
